@@ -1,0 +1,316 @@
+
+.slider {
+  box-sizing: border-box;
+  background-color: white;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+    z-index: 10000000000000000000000;
+    position: absolute;
+    display:none;
+}
+
+#onboarding-vid {
+    width: 100vw;
+    position: absolute;
+    left: 0vw;
+    z-index: 0;
+    opacity: 0.6;
+    display: none;
+}
+
+#onboarding-vid2 {
+    width: 100vw;
+    
+}
+
+#logo-onboarding {
+    position: absolute;
+    z-index: 100000;
+    top: 13vh;
+    display: none;
+    left: 50%;
+    margin-left: -7.5vw;
+    width: 15vw;
+    opacity: 0.5;
+}
+
+
+#firstvid {
+    width: 100vw;
+    opacity: 0.9;
+    z-index: -1000;
+    position: fixed;
+}
+
+#whitelogo {
+    
+position: fixed;
+    z-index: 100000000000000000000000!important;
+    top: 40vh;
+    
+    left: 50%;
+    margin-left: -7.5vw;
+    width: 15vw;
+    opacity: 1;
+    
+    
+}
+
+
+#introduction-paragraph {
+    font-size: 5vw;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue",
+      "Lucida Grande"!important;
+    width:70vw;
+    left: 50%;
+    color: white;
+    top: 70vh;
+    margin-left: -35vw;
+    text-align: center;
+    font-weight: 200!important;
+    text-shadow: none;
+    
+}
+
+#swipe {
+    position: relative;
+    top: 74vh;
+    width: 10vw;
+    left: 50%;
+    opacity: 0.3;
+    margin-left: -5vw;
+     -moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        filter: FlipH;
+        -ms-filter: "FlipH";
+}
+
+#introduction-paragraph2 {
+    font-size: 4.1vw;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue",
+      "Lucida Grande"!important;
+    width:70vw;
+    left: 50%;
+    top: 70vh;
+    margin-left: -35vw;
+    text-align: center;
+    font-weight: 200!important;
+}
+
+#welcome {
+    font-size: 7vw;
+    position: absolute;
+    top: 59vh;
+    width: 80vw;
+    left: 50%;
+    margin-left: -40vw;
+    padding-bottom: 4vh;
+    border-bottom: 1px solid white;
+    font-weight: 300!important;
+    opacity: 0.7;
+    text-shadow: none;
+    color: white;
+         font-family: system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue",
+      "Lucida Grande"!important;
+}
+#skip-introduction {
+      position: absolute;
+    opacity: 0.6;
+    left: 50%;
+    margin-left: -42vw;
+   bottom: 10vh;
+    border-radius: 100;
+    width: 84vw;
+       background-image: url(../images/footer-bg.png);
+    background-size: cover;
+    height: 6.9vh;
+    text-shadow: none;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue",
+      "Lucida Grande"!important;
+    font-weight: 200;
+    font-size: 14px;
+    border-radius: 100px;
+    border: none;
+    padding-top: 1.8vh;
+  padding-bottom: 1vh;
+   text-align: center;
+    letter-spacing: -0.4px;
+    z-index: 1000000;
+}
+
+
+
+#video1 {
+    position: fixed;
+        left: 6vw;
+    z-index: 10000000000;
+    width: 100vw;
+    top: 50vw;
+    
+}
+
+#video4 {
+    position: fixed;
+        left: 50%;
+    margin-left: -35vw;
+    z-index: 10;
+    width: 70vw;
+    top: 10vw;
+    
+    
+}
+#video6 {
+    position: fixed;
+        left: 50%;
+    margin-left: -25vw;
+    z-index: 10;
+    width: 50vw;
+    opacity: 0.7;
+    top: 20vw;
+    
+    
+}
+
+#video8 {
+    position: fixed;
+        left: 50%;
+    margin-left: -35vw;
+    z-index: 10;
+    width: 70vw;
+    opacity: 0.7;
+    top: 20vw;
+    
+    
+}
+
+p22 {
+    width: 10vw!important;
+}
+
+#video5 {
+    position: fixed;
+        left: 50%;
+    margin-left: -40vw;
+    z-index: 10;
+    width: 80vw;
+    top: 3vw;
+    
+    
+}
+#video2 {
+    position: fixed;
+        left: 1vw;
+    z-index: 10000000000;
+    width: 90vw;
+    top: 50vw;
+    
+}
+
+#screen2 {
+    font-size: 4.5vw;
+    position: fixed;
+    top: 70vh;
+    width: 70vw;
+    left: 50%;
+    z-index: 1000;
+    margin-left: -35vw;
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue",
+      "Lucida Grande"!important!important;
+    letter-spacing: -0.6px;
+}
+
+#screen5 {
+    font-size: 4.5vw;
+    position: fixed;
+    top: 70vh;
+    width: 50vw;
+    left: 50%;
+    z-index: 1000;
+    margin-left: -25vw;
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue",
+      "Lucida Grande"!important!important;
+    letter-spacing: -0.6px;
+}
+.slider .slides-container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  cursor: -webkit-grab;
+  cursor: grab;
+  transition: transform .5s;
+ 
+}
+
+.slider:active .slides-container {
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
+}
+
+.slider .slides-container.moving {
+  transition: none;
+}
+.slider .slides-container.moving .slide {
+  transition: none;
+}
+.slider .slides-container.moving .parallax {
+  transition: none;
+}
+
+.slider .slide {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: none;
+    background-color: white;
+  opacity: .8;
+  transform: scale(.9);
+  transform-origin: center;
+  transition: transform .5s, opacity .5s;
+}
+
+.slider .slide.current {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.slider .slide .parallax {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  pointer-events: none;
+  transition: transform .5s, opacity .5s;
+}
+
+.slider .slide.current .parallax {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+.slider .slide .parallax p {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+  text-align: center;
+  color: black;
+  font-family: Circular, sans-serif;
+  font-size: 3em;
+}
+
+
+.slider .slide:nth-child(6n+2) { background: none; }
+.slider .slide:nth-child(6n+3) { background: none; }
+.slider .slide:nth-child(6n+4) { background: none; }
+.slider .slide:nth-child(6n+5) { background: none; }
+.slider .slide:nth-child(6n+6) { background: none; }

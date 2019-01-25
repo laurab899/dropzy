@@ -1,0 +1,1181 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+<meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1, maximum-scale=1,user-scalable=0"/>
+    
+  
+    <script src='js/geturi.js'></script> 
+    <link rel="stylesheet" href="animate.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="css/slider.css">
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    	
+    
+    <style>
+		/* Reduce the height of the header on smaller screens. */
+		@media all and (max-width: 48em){
+			.ui-popup .ui-title {
+				font-size: .75em;
+			}
+		}
+
+        .ui-page {
+            background-color: white;
+        }
+	</style>
+
+    <script type="text/javascript" charset="utf-8" src='cordova.js'></script>
+
+</head>
+<body>
+
+    <div class='no-internet'>
+        <img src='images/wifi.gif' id='wifi'/>
+        <h id='no-internet-text'>In order for Dropzy to function, internet and location access must be enabled on your device.<br>
+        <br>Enable these functionalities to continue using Dropzy's services.</h>
+        <a data-role='button' id='refresh'>Refresh</a>
+    </div>
+
+    <div class='interval'>
+        <img src='images/loader-gif.gif' id='dribble'/>
+    </div>
+    
+<div class="slider">
+    
+    <img id='logo-onboarding' src='./images/1x/newlogopurple.png'/>
+    <div id='skip-introduction'>Close Introduction</div>
+
+            <ul class="slides-container">
+      
+      
+                <li class="slide">
+                <img src='images/1x/newlogowhite.png' id='whitelogo'/>
+        
+                <div class="parallax">   
+                    <video  id='firstvid' preload="auto" autoplay playsinline muted loop><source src="images/videoonboarding.mp4"></video>
+                <p id='welcome'>Welcome to Dropzy</p><br>
+                <p id='introduction-paragraph'>Swipe to Begin </div>
+                <img src='images/swipe.svg' id='swipe'/>
+                </li>
+   
+                <li class="slide">
+                <div class="parallax"><p id='screen2'><p9>Step 1</p9><br> <br>Tell us where you are / where your order is being delivered to.</p>
+                <img src='images/animation3.gif' id='video5'/></div>
+                </li>
+                
+                <li class="slide">
+                <div class="parallax"><p id='screen5'><p9>Step 2</p9><br><br> <h10></h10>Tell us what you need & how much it costs.</p>
+                <img src='images/animation2.gif' id='video4'/></div>
+                </li>
+                <li class="slide" id='lastslide'>
+                <div class="parallax" ><p id='screen2'> <p9>Step 3</p9><br> <br>Tell us where to buy the product.</p>
+                <img src='images/animation4.gif' id='video4'/></div>
+                </li>
+                <li class="slide">
+                 <div class="parallax" ><p id='screen2'> <p9>Step 4</p9><br> <br>Wait for a deliverer to accept and deliver your order.</p>
+                <img src='./images/clock.gif' id='video6'/></div>
+                </li>
+                <li class="slide">
+                   <div class="parallax" ><p id='screen2'> <p9>It's that simple.</p9><br><br> Make your first order today.</p> <img src='./images/thumb.gif' id='video8'/></div>
+                </li>
+              </ul>
+</div>
+
+
+<div class="footer-navbar">
+
+        <a href='#home' class="left1" data-role='none'>
+        <img src='images/ordericonred@3x.png' id='image-order'/>
+        <p id='order-tag'>Order</p>
+        </a>
+    
+        <a href='#deliver-page' data-role='button' class="left2">
+        <img id='image-deliver' src="images/delivericonwhite@3xcopy.png"/>
+        <p id='deliver-tag'>Deliver</p>
+        </a>
+
+        <a href='#order-route' data-role='button' class="left3">
+        <div id='green-circle' class='flashit'></div>
+        <img id='image-deliver' src="images/deliver-icon-active.png"/>
+         <p id='deliver-tag'>Deliver</p>
+        </a>
+    
+        <a href="#settings-home" data-role='button' class="right">
+        <img id='image-settings' src="images/settings-icon-06.png"/>
+        <p id='account-tag'>Account</p>
+        </a>
+    </div>
+
+     <div class='popup-overlay' id='dropzy-overlay'></div>
+
+    <div class='in-delivery-options'>
+   
+    <div id='cancel-delivery'>Cancel Delivery</div>
+    <div id='cancel-call'>Back</div>
+
+
+    </div>
+
+      <div class='in-delivery-message-options'>
+           <a id='call-number' data-role='none'>Call</a>
+    <a id='whatsapp-number' data-role='none'onclick="callNumber();">Send message via Whatsapp</a>
+    <div id='sms-number'>Send message via SMS</div>
+    <div id='cancel-message'>Back</div>
+
+
+    </div>
+     <div id='searching-for-deliverer'>
+
+         
+            <p id='searching-text'>Just a second, we are searching for available deliverers near you!</p>
+        <div class="loader"></div>
+
+         <div id='cancel-search'>Cancel Search</div>
+
+    </div>
+    
+    <a id='wanto'>Want to report the deliverer that just cancelled? Contact Us.</a>
+
+    <div data-role="page" data-position="fixed" id="login" class='page'>
+        
+       
+         <div id='empty' style='display: none;'></div>
+         <img id='home-bg' src='images/dublin.jpeg'/>
+
+        <img src='images/newlogowhite.png' id='login-logo'/>
+
+   <script src='dist/bounce.js'></script>
+
+
+        <div data-role="content" data-position="fixed" id="login-content">
+
+
+				<form id="login-form" action="">
+                    <script src="https://smtpjs.com/v2/smtp.js">
+    </script>
+            
+			    <input  id="email" onclick='focusLogin();' data-role='none' type="text" placeholder="Email Address" /> <br/>
+			    <input id="password" onclick='focusLogin2();' data-role='none' type="password" placeholder="Password" /> <br/>
+
+			    <a data-role='button' id="loginButton" type="submit">Login</a>
+
+			    <br/>
+			  </form>
+
+			    <p id="status"></p>
+
+            <div id="response"></div>
+
+            <a id='existing-account' onclick='signUp();'>Don't have an account yet?
+                <b>Sign Up</b></a>
+
+  </div>
+
+
+
+        
+        <div id='register-container'>
+            
+                   
+           <a id='login-account' onclick='login();'>Already have an account? 
+               <b>Log In</b></a>
+    
+    <a data-role='button' onclick='registerBack();'id='register-back'>Back</a>
+             
+        <form id="register-form" action="">
+            
+            <h id='dob-text'>Date of Birth</h>
+                <input class='reg-form' onclick="selectedInput(this)" onblur="deselectedInput(this)" data-role='none' id="firstname-reg" type="text" placeholder="First Name" /> <br/> 
+            <input class='reg-form' onclick="selectedInput(this)" onblur="deselectedInput(this)" data-role='none' id="lastname-reg" type="text" placeholder="Last Name" /> <br/> 
+			    <input  class='reg-form' onclick="selectedInput(this)" data-role='none'id="email-reg" type="text" placeholder="Email Address" /> <br/> 
+             <input  class='reg-form' onclick="selectedInput(this)" data-role='none' id="phone-reg" type="number"  placeholder="Phone Number" /> <br/> 
+               
+            <input type="text" onfocus="selectedInput(this), (this.type='date')" onblur="(this.type='text')" class="reg-form" placeholder="Date of Birth" data-role='none' name="dateofbirth" id="dob-reg"><br>
+			    <input class='reg-form'onclick="selectedInput(this)" data-role='none'id="password-reg" type="password" placeholder="Password" /> <br/>
+                <input class='reg-form' onclick="selectedInput(this)" data-role='none'id="confirm-password-reg" type="password" placeholder="Confirm Password" /> <br/>
+               
+			   
+			    <a data-role='button' id="registerButton" >Sign Up</a>
+			    <br/>
+          
+         
+			  </form>
+        
+       
+ 
+        
+        </div>  
+  </div>
+
+
+
+    <div data-role="page" data-position="fixed" id='home' class='page'>
+        
+        <img src='images/info.png' id='showonboarding'/>
+      
+
+       <audio id='success' src='audio/success.wav'></audio>
+
+        <div id='address-div' style='display: none;'></div>
+        <div id='pickup-map'></div>
+
+
+   <div id='boxx3'></div>
+        <div data-role='none' id='in-order'>
+
+          <h id='onway'>Your order is on its way!</h><br>
+            <div id='determine'></div>
+            <div id='determine-cancel'></div>
+
+        <div id='details-container' data-role='none'>
+        <h id='deliverer-name' class='deliver-class'></h><br>
+        <h id='deliverer-itemname'class='deliver-class'></h><br>
+             <h id='deliverer-itemdetails'class='deliver-class'></h><br>
+        <h id='deliverer-itemcost'class='deliver-class'></h><br>
+        <h id='deliverer-pickup'class='deliver-class'></h><br>
+        <h id='deliverer-address'class='deliver-class'></h><br>
+
+            <img src='images/basketgradient-02.png' id='inorder-ico1'>
+            <img src='images/icons3-03.png' id='inorder-ico2'>
+             <img src='images/journeymap.svg' id='inorder-ico3'>
+
+
+          </div>
+          <img id='order-user-pic' src='images/userpic.png'/>
+
+          <h id='deliverer-fullname'></h>
+					<div id='deliv-1-star'>1 STAR</div>
+					 <div id='deliv-2-star'>2 STAR</div>
+					 <div id='deliv-3-star'>3 STAR</div>
+					 <div id='deliv-4-star'>4 STAR</div>
+					 <div id='deliv-5-star'>5 STAR</div>
+            
+            <img src='images/0stars.png' id='deliverer-rating-stars'/>
+            
+    <a data-role='button' class='deliver-buttons' id='deliver-call'><img id='icon-call' src='images/phone.png'/></a>
+    <a data-role='button'  class='deliver-buttons' id='deliver-message'><img id='icon-cancel' src='images/cancelong.png'/><p id='text-01'>Message</p></a>
+    <a data-role='button'  class='deliver-buttons' id='deliver-cancel'><img id='icon-message' src='images/messagepng.png'/></a>
+
+    </div>
+
+          <div data-role='none' id='completed-order'>
+              
+              <a id='re-submit-order' data-role='button'>Test</a>
+
+<img src='images/checked.png' id='review-pic'/>
+        <h id='please-review'>Please rate your deliverer / delivery experience.</h>
+
+        <h id='complete-text'>Your order has been delivered successfully.</h>
+
+
+			<div class="starrating" id="star-rating">
+			  <a href="#" data-role="button" value="" data-inline="true" data-icon="star" data-vote="1" id="oneStar" data-iconpos="notext"></a>
+			  <a href="#" data-role="button" value="" data-inline="true" data-icon="star" data-vote="2" id="twoStar" data-iconpos="notext"></a>
+			  <a href="#" data-role="button" value="" data-inline="true" data-icon="star" data-vote="3" id="threeStar" data-iconpos="notext"></a>
+			  <a href="#" data-role="button" value="" data-inline="true" data-icon="star" data-vote="4" id="fourStar" data-iconpos="notext"></a>
+			  <a href="#" data-role="button" value="" data-inline="true" data-icon="star" data-vote="5" id="fiveStar" data-iconpos="notext"></a>
+			  <b><div class="vote" style='display:none;' id=vote></div></b>
+					<input data-role='none' type="text" value="" id="score"/>
+			</div>
+
+
+
+
+
+        <a href="#home" data-role='button' id='exit-delivery'>Submit Rating</a>
+               <a href="#home" data-role='button' id='exit-delivery2'>Submit Rating</a>
+            <a data-role='button'  id='button6'>Report Deliverer</a>
+
+
+        </div>
+        
+          <div data-role='none' id='new-location'>
+              
+              
+       
+              <input data-role='none' placeholder="What are you looking for?"  id='whatyouneed'>
+              
+    
+              <img src='images/1x/newlogopurple.png' id='home-logo'/>
+              
+              <h id='iwant'></h>
+               
+              <div data-role='button' id='specify-address'>Create a New Order</div>
+        
+            <div data-role='none' id="map">
+
+
+
+
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBCXZJPBrdQAyPzhhkE4miNOxH1_AbfJDw&callback=initMap&libraries=places&callback=initAutocomplete&directions&geometry"
+         async defer></script>
+
+        <script src="js/map&functions.js"></script>
+
+        </div>
+        
+        
+        </div>
+        
+            <div id='new-item'>
+                
+                <img src='images/back.svg' id='back1' class='back-btn'/>
+            
+            <div id='whitebox2'></div>
+        
+        <form id='itembox'>
+                <input data-role='none' id='itemname-area' placeholder='What do you need?'class='iteminputs' type='text'>
+         <br><br><input data-role='none' id='itemprice-area'placeholder='What does it cost?' class='iteminputs' type='text'>  
+          <br><br>   <textarea data-role='none' rows="2" id='itemdetails-area'>Is there any extra details you would like to specify?</textarea>
+            
+            <img src='images/info.png' id='extra-info'/>
+        
+             <img src='images/form-itemname.svg' id='icon-location'/>
+        
+        </form>
+                
+                  <a id="itemDetailsNext"  data-role='button'>Next Step</a>
+        
+        </div>
+        
+         <div id='new-pickup'>
+             
+             <img src='images/back.svg' id='back2' class='back-btn'/>
+             
+             <div data-role="content" id="map2">
+        </div>
+             
+             <input data-role='none' placeholder='What store sells this product?' class='iteminputs' id='new-pickup-field'>
+            
+            <div id='whitebox3'></div>
+        
+          <img src='images/shop@3x.png' id='icon-shop'/>
+                
+                  <a id="submit6"  data-role='button'>Review Order</a>
+        
+        </div>
+        
+        <div id='slide-up-location'>
+            
+            <div id='white-box'></div>
+            
+            <img src='images/cancel.svg' id='cancel-order-process'/>
+      <a data-role='button' id='work-btn'  class='workhome'><img src='images/suitcase.svg' id='work-icon'/>Work Address</a>
+
+            <a data-role='button' id='home-btn'  class='workhome'><img src='images/homeicon.svg' id='home-icon'/>Home Address</a>
+
+            <a data-role='button' id='another-btn' >New Address</a>
+                     <div id="radios2">
+  <input data-role='none' id="rad1" type="radio" class='radio2' name="radioBtn" checked>
+  <label  data-role='none' id='label1' class="labels" style='color: white; padding-bottom: 4vh; font-size: 12px; text-shadow: none;'   for="rad1">My Current Address</label>
+  <input  data-role='none' id="rad2"  type="radio" class='radio2' name="radioBtn">
+  <label  data-role='none' id='label2'  class="labels" style=' color: grey; font-family: system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue",
+      "Lucida Grande"; font-size: 12px; text-shadow: none; position: relative; left: 50%; top: -6.5vh; padding-bottom: 4.1vh; ' for="rad2">Another Address</label>
+
+  <div id="bckgrnd"></div>
+</div>
+            
+        <a id="deliveryAddressNext"  data-role='button'>Next Step</a>
+
+        
+               <input id='location-input' type='text' data-role='none' placeholder="Enter a New Address" value="Choose a Delivery Address" class='inputs'>
+            
+            <img src='images/pin.svg' id='icon-location'/>
+              
+              <form id='location-form' action=''>
+
+             <div id='line'></div>
+
+
+ 
+           <br><br><br><br>
+
+
+
+
+
+        </form>
+        
+        </div>
+        
+        
+    
+
+             <div data-role='none' id='location'>
+
+
+
+  <a class="material-icons" id='location-back' style="font-size:32px;color:#fa6561; text-decoration: none;">close</a>
+
+    <p id='location-instructions'>Where would you like your order to be delivered?</p>
+        
+        
+
+        
+
+
+
+
+
+        <div id='current-location-btn'>
+
+            <img id='current-pos-icon' src='images/currentpos.png'/>
+
+
+        </div>
+
+        </div>
+
+            <div id="pickup-location" data-role='none'>
+
+
+                <a class="material-icons" id='pickup-location-back' style="font-size:28px;color:#648EF8; text-decoration: none;">close</a>
+          
+
+
+
+         <h id='pickup-selection-title'>Pick-up Location</h>
+                <p id='select'>Select from a general list of stores in the Dublin City Area</p>
+        <div id='pickup-selection-container'>
+
+            <form id='shopselection'>
+
+            <div class='shop' id='spar'>
+
+                <img class='shopphoto' src='images/spar.png'/>
+               <div class='radios' id='sparradio'></div>
+                <p class='shopname'>Spar</p>
+
+
+
+            </div>
+            <div class='shop' id='tesco'>
+
+                 <img class='shopphoto' src='images/tesco.png'/>
+                <div data-role='none' class='radios' type="radio" id='tescoradio'></div>
+                 <p class='shopname'>Tesco</p>
+
+            </div>
+            <div class='shop' id='centra'>
+
+                   <img class='shopphoto' src='images/centra.png'/>
+                <div data-role='none' class='radios'type="radio" id='centraradio'></div>
+                  <p class='shopname'>Centra</p>
+
+            </div>
+            <div class='shop' id='lidl'>
+
+                <img class='shopphoto' src='images/lidl.png'/>
+                <div data-role='none' class='radios'type="radio" id='lidlradio'></div>
+                <p class='shopname'>Lidl</p>
+
+            </div>
+
+
+             <div class='shop' id='aldi'>
+
+                 <img class='shopphoto' src='images/aldi.png'/>
+                <div data-role='none' class='radios' type="radio" id='aldiradio'></div>
+                  <p class='shopname'>Aldi</p>
+
+            </div>
+
+            <div class='shop' id='dunnes'>
+
+                 <img class='shopphoto' src='images/dunnes.png'/>
+                <div data-role='none' class='radios' type="radio" id='dunnesradio'></div>
+                  <p class='shopname'>Dunnes</p>
+
+            </div>
+
+            <div class='shop' id='supervalu'>
+
+                 <img class='shopphoto' src='images/supervalue.png'/>
+                <div data-role='none' class='radios' type="radio" id='supervaluradio'></div>
+                  <p class='shopname'>Supervalu</p>
+
+            </div>
+
+                </form>
+
+
+            </div>
+
+
+    <!--hidden div to store the users shop selection-->
+        <div id='selected-store'></div>
+
+
+
+
+               <p id='or'>OR</p>
+
+            <p id='alernative'>Enter the name of a specific store that sells your desired product.</p>
+
+               <form id='pickup-location-form' action=''>
+
+
+       
+
+
+
+
+        </form>
+
+
+
+
+
+       
+
+            <div id='inputfield'></div>
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+          <div data-role='none' id='order'>
+
+        <img src="images/1x/newlogopurple.png" class='img-logo'>
+
+
+        <div id="local-storage-email"></div>
+<h id='review-order-title'>Review Order</h>
+
+<img src='images/cancelicon.svg' onclick='cancelOrderProcess();' id='abandon'/>
+    <script type="text/javascript" src="js/upload.js"></script>
+              
+              <script src='js/jquery.maskMoney.js'></script>
+            
+              <div id='addedFee'><img id='addedfeepic' src='images/info.png'/>A €3.00 Delivery Fee will be added once your order is accepted.</div>
+            <form name="dfg" id='order-form' action="http://dropzy.site/create-order-test.php" method="post">
+                <input  data-role='none' name="idorderer" id="idorderer" type="hidden" value="email" onclick="selectedOrderInput(this);" readonly>
+                <textarea  name='locationname' href='#location'data-role='none' id='dropoff-location' data-icon='arrow-r' placeholder="Delivery Address" onclick="placeholder=''" class='inputs' readonly></textarea>
+                <input data-role='none' name="itemnamefield" type="text" placeholder="What do you need?" id='itemnamefield' onclick="selectedOrderInput(this);" class='inputs' required readonly><br>
+                <textarea data-role='none'  id='itemdetails' name='itemdetails' placeholder="Extra Specifications / Brand Names etc" class='inputs' required readonly></textarea>
+               <input name="price"  data-role='none' class='inputs' id='itemprice' type="text" placeholder="How much does it cost?" onclick=" " onblur='euroSignClose();changeIconBack(this);' class='inputs' required readonly>
+                  <script>
+              
+              $("#itemprice").maskMoney({thousands:'', decimal:'.', allowZero:true, prefix: ' € '});
+              $("#itemprice-area").maskMoney({thousands:'', decimal:'.', allowZero:true, prefix: ' € '});         
+              
+              
+              </script>
+                <textarea name="pickup" data-role='none' placeholder="Nearest Pickup Store" id="pickup-location-field" name="pickup" class='inputs' required readonly></textarea>
+
+
+            <br>
+                
+                <input data-role='none' name='lat' id='dropoff-lat' ><input name='long' data-role='none' id='dropoff-long' ><input data-role='none' type='hidden' name='pickup-lat' id='pickup-lat' ><input data-role='none'type='hidden' name='pickup-long' id='pickup-long'readonly >
+
+                <a class="material-icons"id='location-link' style="font-size:22px;color:#648EF8; text-decoration: none;">add</a>
+
+
+                <img id='ico-itemname' class='ordericons' src='images/form-itemname.svg'/>
+                 <img id='ico-price' class='ordericons'src='images/pricetag.svg'/>
+
+                 <img id='ico-pickup' class='ordericons'src='images/locationicon.svg'/>
+                 <img id='ico-dropoff' class='ordericons' src='images/homeicon.svg'/>
+
+                <button data-role='none' onclick='submitOrder();' name="submit" id='place-order' type="submit">Place Order</button>
+
+
+
+
+            </form>
+              <div id='greybox'></div>
+         <p id='added-info'> <img id='info-graphic' src='images/info.png'>A delivery fee of <b>€3</b> will be added to your order once accepted
+             </p>
+              
+               <a data-role='button' onclick='editOrder();' id='edit-order'>Edit Order</a>
+
+        </div>
+
+
+    <div data-role='content' id='logo-container'></div>
+
+
+
+
+        </div>
+
+    <div data-role='page' id='deliver-page' class='page'>
+
+        <div id="radios3">
+  <input data-role='none' id="rad3" type="radio" class='radio3' name="radioBtn2" checked>
+  <label  data-role='none' id='label3' class="labels1" style='color: white; padding-bottom: 4vh; font-size: 12px; text-shadow: none;'   for="rad3">Listview</label>
+  <input  data-role='none' id="rad4"  type="radio" class='radio3' name="radioBtn2">
+  <label  data-role='none' id='label4'  class="labels1" style=' color: grey; font-family: system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue",
+      "Lucida Grande"; font-size: 12px; text-shadow: none; position: relative; left: 50%; top: -6.5vh; padding-bottom: 4.1vh; ' for="rad4">Mapview</label>
+
+  <div id="bckgrnd2"></div>
+</div>
+        
+        
+
+        <div id='map-container-info'></div>
+        <img src='images/searchicon.png' id='search-icon' class='intro'/>
+          <div id='deliver-intro' class='intro'>Are you free to deliver an order at the moment? Turn on your availability below to view active orders near you!</div>
+
+
+        <a data-role='button' id='mapview-btn' class='toggle-map'><img src='images/map-icon.png' id='map-icon'/></a>
+
+        <a data-role='button' id='listview-btn' class='toggle-map'><img src='images/list.png' id='list-icon'/></a>
+
+        <div data-role='none' id='waiting'></div>
+
+   <a data-role='button' id='map-deliver-info'><img src='images/zoomout.png' id='zoomout'></a>
+
+<div data-role="none" id="deliver-map">
+
+
+
+        </div>
+
+
+
+
+  <div id='deliver-interface'>
+
+      <div id='availability-text'>Availability</div>
+
+  <div id="toggles">
+  <input type="checkbox" data-role='none' name="checkbox1" id="checkbox1" id='ios-toggle' class="ios-toggle"/>
+  <label for="checkbox1" class="checkbox-label" data-off="off" data-on="on"></label>
+
+
+      </div>
+
+</div>
+
+
+
+<div id="deliver-container" data-role="content">
+
+<img src='images/SVG/refresh.svg' id='pulrefresh'/>
+<!----This calls the script that feeds back all available orders -->
+<ul class="list" id="listview"></ul>
+
+</div>
+
+
+
+
+        <div id='delivery-summary' style='display:none;'>
+
+        <div id='delivery-item'></div>
+        <div id='delivery-store'></div>
+
+
+
+        <div id='box1'></div>
+        <div id='box2'></div>
+
+
+
+
+
+
+            </div>
+        </div>
+
+
+      <div data-role='page' data-position="fixed" id='order-route' class='page'>
+<div id='boxx4'></div>
+
+<div id='review-request' data role='content'>
+
+
+
+    <div class='list review-container' id='review'>
+
+
+<div id='review-container'>
+             <div class="item">
+
+            <div id="idorderer" class='idorderer'></div>
+        </div>
+
+        <div class="item">
+
+            <div id="itemname" class='itemname'></div>
+        </div>
+    
+    <div class="item">
+
+            <div id="itemnamedetails" class='itemnamedetails'></div>
+        </div>
+
+
+
+        <div id='delivery-store'>
+
+
+            <div class="item">
+
+            <div id="pickup" class='pickup'></div>
+        </div>
+
+        </div>
+
+        <img id='opp-user-pic' src='images/userpic.jpg'/><br><br>
+
+
+        <p id='heading'>Order Summary</p>
+
+<!--        <img id='rating' src='images/rating.png'/>-->
+         <img id='basket-gradient' src='images/basketgradient-02.png'/><p id='header-01'>Item Details</p><p id='header-02'>Pickup & Dropoff Locations</p><p id='header-03'>Cost Price &nbsp;&nbsp;&nbsp;→</p><p id='header-06'>Delivery Fee →</p><p id='header-07'>Total Payment Due&nbsp;→</p><p id='header-02'>Pickup & Dropoff Locations</p>
+
+        <p id='header-04' >Set Your Delivery Fee</p>
+        <img id='orderer-address' src='images/marker-pin-01.png'/>
+        <div id="orderid" style='display: none;' class='orderid'></div>
+  <img id='to-from-02' src='images/jouney2.png'/>
+        <div class="item">
+            <label style='display: none;'>lat</label>
+            <div id="lat" style='display: none;' class='long'></div>
+        </div>
+         <div class="item">
+            <label style='display: none;'>long</label>
+            <div id="long" style='display: none;' class='long'></div>
+        </div>
+
+
+        <div class="item">
+
+            <p id="locationname" class='locationname'></p>
+        </div>
+        <div class="item review-container">
+            <label style='display: none;'>Price</label>
+            <div id="price" class="price"></div>
+            <div id="fee" class="fee"></div>
+             <div id="total" class="total"></div>
+             <div id="plus" class="plus"></div>
+            <img src='images/icons3-03.png' id='price-gradient'/>
+        </div>
+
+        <div class="item">
+
+
+             <form data-role='none'id='delivery-fee'>
+
+
+    <input data-role='none' type='number' placeholder='€0.00' min='0.00' max='5.00' id='delivery-fee-input'>
+
+
+
+            <a href='#order-route' onclick='showRoute();' type="button" class='review-container' id="acceptOrder" data-role='button' value="Accept This Job">Accept Order<img src='images/accept.png' id='img-accept'/></a>
+
+                     </form>
+
+            <a type="button" onclick="deny();" id="deny" data-role='button' value="Deny" class='review-container'>Decline Order<img src='images/decline.png' id='img-decline'/></a>
+        </div>
+    </div>
+
+</div>
+
+    </div>
+
+          <div id='boxx2'></div>
+
+        <div id='travel-time'></div>
+        <a id='seemoredirections' data-role='button'>Directions</a>
+
+        <a id='walking-btn' style='display: none' data-role='button'>Walking</a>
+        <a id='driving-btn' style='display: none' data-role='button'>Driving</a>
+        <div id='directionsinformation'></div>
+
+          <div id='timer'></div>
+    <div class='deliverer-container' id="deliver-container" data-role='content'>
+
+
+        <div id='delivery-header'>
+
+        <img src='images/userpic.png' id='phone-order'/>
+        <p id='summary-orderer-name'></p>
+        <img src= 'images/moreoptions.svg' id='extra-options'/>
+
+
+        </div>
+
+
+        <div id='delivery-summary'>
+             <div id='box10'></div>
+<div id='box11'></div>
+            
+            <p id='title-itemname'>Order</p>
+             <p id='title-itemprice'>Payment Due</p>
+
+            <h id='delsummary'>Order Details</h>
+
+            <div id='summary-itemname'></div>
+            <div id='summary-itemdetails'></div>
+            <div id='summary-itemprice'></div>
+
+
+
+
+
+
+
+        </div>
+
+        
+
+
+
+        </div>
+
+<div id='toblur'>
+
+        <div id='box1'></div>
+        <div id='box2'></div>
+         
+        <img id='open-external-map' src='images/1x/go1_1.png'/>
+           <img src='images/order-icon-02.png' id='ordericon'/>
+        <div id='directions-infobox'>
+            
+           
+
+             <div id='user-current-address'></div>
+             <div id='summary-pickup'></div>
+             <div id='summary-dropoff'></div>
+
+            <img id='tofromto' src='images/SVG/tofromto2.svg'/>
+
+            </div>
+ <img src='images/google.png' id='gmapss'/>
+          
+          <div id='gmapstag'>Open</div>
+           <img src='images/tofromto1.png' id='toofrom'/>
+            <img src='images/form-itemname.svg' id='deliverpage-iconitemname'/>
+               <img src='images/pricetag.svg' id='deliverpage-iconitemprice'/>
+        
+
+          <a data-role='button' id='finished'>Delivery Completed </a>
+    <div data-role="content" id="route-map">
+
+
+
+
+
+
+    
+
+        </div>
+
+          </div>
+          <div data-role='none' id='completed-order-deliverer'>
+
+
+        <h id='please-review-deliverer'>Thank you for delivering this order!</h>
+
+        <h id='complete-text-deliverer'>Delivery Complete</h>
+
+              <h id='payment-received'></h>
+
+        <img src='images/checked.png' id='smiley-deliverer'/>
+
+
+
+
+        <a data-role='button' id='button1'>Return to Home</a>
+
+  <a data-role='button'  id='button2'>Report Orderer</a>
+       
+              
+<a data-role='button'  id='button4'>Contact Orderer</a>
+              
+
+        </div>
+
+
+
+    </div>
+    
+    
+<div data-role="page" id='settings-home'>
+    
+   <img id='ajax-loader' src='images/ajax-loader.gif'/>
+
+    	<div id="about">
+		<div data-role="header" id="settings-header">
+			<a data-icon="carat-l"  id="about-back" onclick='aboutBack()' class="ui-btn ui-corner-all ui-icon-carat-l ui-btn-icon-notext ui-nodisc-icon ui-alt-icon" data-transition="slide" data-direction="reverse" style="background-color:white; color: #91abf4; border: none;">  </a>
+			<p id='aboutheader'>About</p>
+		</div>
+		<br><br><br>
+		<img src="images/1x/newlogopurple.png" class="img-logo-settings">
+		<br><br><br><br><br>
+		<p>Version 1.0.0</p>
+		<div data-role="none" data-enhance="false" id='settings-home-buttons' data-icon='none' data-theme="none" data-content-theme="d">
+
+	
+		<a  href='mailto:infodropzy@gmail.com' data-role="button" id='contactus' data-transition="slide" class="no-padding settings-ui-btn  ui-btn ui-shadow ui-corner-all ui-btn-icon-right ui-icon-carat-r ui-nodisc-icon ui-alt-icon" style="background-color:white;">Contact us About Your Order</a><br>
+		<a href='mailto:infodropzy@gmail.com' data-role="button" id='sendus' class="settings-ui-btn ui-btn ui-shadow ui-corner-all ui-btn-icon-right ui-icon-carat-r ui-nodisc-icon ui-alt-icon" style="background-color:white;">Send us App Feedback</a>
+	
+		</div>
+		<h2>2018 Laura Boyles & Hayley Marjoram</h2><br>
+
+		<font color="#91abf4"><p id='view-onboarding'> View Introduction</p></font>
+	</div>
+
+    <div id="my-saved-addresses">
+	<div data-role="header" id="settings-header">
+		<a  data-icon="carat-l"  onclick="addressesBack();"id="addresses-back" class="ui-btn ui-corner-all ui-icon-carat-l ui-btn-icon-notext ui-nodisc-icon ui-alt-icon" style="background-color:white; color: #91abf4; border: none;">  </a>
+		<p id='myaddresses'>Delivery Addresses</p>
+	</div>
+			<br><br>
+			<form id='addresses-form' data-role='none'>
+			<input type='text' class='inputs-addresses' data-role='none' id='homeaddress' readonly>
+			<input type='text' class='inputs-addresses-work' data-role='none'  id='workaddress' readonly>
+			</form>
+
+
+
+</div>
+    
+    
+    <div id="my-payments">
+	<div data-role="header" id="settings-header">
+		<a  data-icon="carat-l"  onclick="paymentsBack();"id="payments-back" class="ui-btn ui-corner-all ui-icon-carat-l ui-btn-icon-notext ui-nodisc-icon ui-alt-icon" style="background-color:white; color: #91abf4; border: none;">  </a>
+		<p id='mypayments'>Payment Methods</p>
+	</div>
+			<br><br>
+			<img src='images/payment2.svg' id='svg-payments'/>
+
+
+
+</div>
+    
+    <div id="my-orders">
+		<div data-role="header" id="settings-header">
+			<a data-icon="carat-l" onclick='ordersBack();' id="orders-back" class="ui-btn ui-corner-all ui-icon-carat-l ui-btn-icon-notext ui-nodisc-icon ui-alt-icon" style="background-color:white; color: #91abf4; border: none;" data-transition="slide" data-direction="reverse">  </a>
+			<p id='myorders'>My Orders</p>
+		</div>
+		 <br>
+			<div id='previousOrders'>
+			</div>
+
+	</div>
+    
+     <div id="my-details">
+
+	<div data-role="header" id="settings-header">
+		<a data-icon="carat-l"  id="details-back" onclick='detailsBack();'class="ui-btn ui-corner-all ui-icon-carat-l ui-btn-icon-notext ui-nodisc-icon ui-alt-icon" data-transition="slide" data-direction="reverse" style="background-color:white; color: #91abf4; border: none;">  </a>
+		<p id='mydetails' >My Details</p>
+		<a href="#settings-home" data-role="button" id="update2"  class="ui-btn ui-corner-all ui-btn-icon-right ui-alt-icon" style="background-color:white; border: none;">Save Updated Details</a>
+	</div>
+		<div id='settings-page-container'>
+		<div id='settings-details-username2'></div>
+		<div id='settings-details-email'></div>
+  	</div>
+
+         <h id='editinfo'>You can edit your account info above and save any changes made.</h>
+		<form id='settings-form' data-role='none'>
+            <div id='white-box8'></div>
+            <img src='images/iconuser.png' id='usericon2'/> <img src='images/iconuser.png' id='usericon3'/><img src='images/call.png' id='iconcall2'/><img src='images/iconpassword.png' id='iconpassword2'/><img src='images/iconpassword.png' id='iconpassword3'/>
+			 <input type='hidden' class='inputs-settings-email' data-role='none' id='details-email'>
+			 <input type='text' value="First name"class='inputs-settings' data-role='none' id='details-fname'>
+			 <input type='text' class='inputs-settings' data-role='none' id='details-lname'>
+			 <input type='text' class='inputs-settings' data-role='none' id='details-phone'>
+             <input type='text' class='inputs-settings' data-role='none' id='details-password'>
+            <input type='text' class='inputs-settings' data-role='none' id='details-password-confirm'>
+			 <input type='hidden' class='inputs-settings' data-role='none' id='details-dob'>
+			<a data-role='button' class="delete-account-button" id='deletemeaccount' onclick="deleteAccount();">Delete My Account</a>
+		</form>
+
+</div>
+    
+    
+    
+    <div id='settings-container-box'>
+<div data-role="none" id="userpic-container">
+
+    <div data-role='none' class="dropzone"></div>
+
+
+    <script type="text/javascript" src="js/imgur.js"></script>
+    <script type="text/javascript">
+        var feedback = function (res) {
+            
+         
+            if (res.success === true) {
+
+                $('#ajax-loader').show().delay(4000).fadeOut();
+                var status = document.querySelector('.status');
+                var p = document.createElement('p');
+                var profilePic = document.getElementById('settings-user-pic');
+                localStorage.setItem('profileImage', res.data.link);
+
+                var localImage = localStorage.getItem('profileImage');
+                profilePic.src = localImage;
+
+                var t = document.createTextNode('Image url: ' + res.data.link);
+
+                p.appendChild(t);
+
+                
+                //See 
+                status.classList.add('bg-success');
+                status.appendChild(p);
+
+               uploadMyProfilePhoto();
+                // document.querySelector('.status').innerHTML = 'Image url: ' + res.data.link;
+
+
+
+            }
+        };
+
+
+        new Imgur({
+            clientid: '96e606e1340e4cd',
+            callback: feedback
+        });
+    </script>
+
+
+
+      <img id='settings-user-pic' src='images/userpic.png' style='top: 2vw;'/>
+       <img src='images/uploadpicture-01.png' id='upload-photo'/>
+    <div id='settings-details-username'></div>
+
+    <img src='images/0stars.png' id='stars-image'/>
+				<!--<div id='settings-rating'></div>-->
+				<div style='display: none;' id='settings-1-star'>1</div>
+				<div style='display: none;' id='settings-2-star'>2</div>
+				<div style='display: none;' id='settings-3-star'>3</div>
+				<div style='display: none;' id='settings-4-star'>4</div>
+				<div style='display: none;' id='settings-5-star'>5</div>
+
+
+
+
+		<br><br><br>
+	<!--Might not use	<div class="order-count-container"> 0 Orders</div><div class="deliver-count-container"> 0 Deliveries</div> -->
+
+
+</div>
+        
+        
+<div data-enhance="false" id="test-container">
+    <div data-role="none" id='settings-home-buttons' data-icon='none' data-theme="none" data-content-theme="d">
+		<ul data-role="listview" data-inset="true">
+		<div class='fullBorder'><li><a id='myorders-link' onclick='myOrdersLink();'data-role="button" data-transition="slide" class="settings-ui-btn ui-btn ui-btn-icon-right ui-icon-carat-r ui-nodisc-icon ui-alt-icon" style="background-color:white;">Previous Orders</a></li></div>
+					<br>
+<div class='partialBorder'><li><a id='mydetails-link' onclick='myDetailsLink();' data-role="button" data-transition="slide" class="settings-ui-btn ui-btn ui-btn-icon-right ui-icon-carat-r ui-nodisc-icon ui-alt-icon" style="background-color:white;">My Details</a></li></div>
+<div class='partialBottom'><li><a id="my-saved-addresses-link" onclick="myAddressLink();" data-role="button" data-transition="slide" class="settings-ui-btn ui-btn ui-btn-icon-right ui-icon-carat-r ui-nodisc-icon ui-alt-icon" style="background-color:white;">Delivery Addresses</a></li></div>
+<div class='fullBottom'><li><a href="#my-payments" id='mypayments-link' onclick="myPaymentsLink();" data-role="button" data-transition="slide" class="settings-ui-btn ui-btn ui-btn-icon-right ui-icon-carat-r ui-nodisc-icon ui-alt-icon" style="background-color:white;">Payment Methods</a></li></div>
+					<br>
+<div class='fullBorder'><li><a onclick='aboutLink()' id='aboutlink' data-role="button" data-transition="slide" class="settings-ui-btn ui-btn ui-btn-icon-right ui-icon-carat-r ui-nodisc-icon ui-alt-icon" style="background-color:white;">About</a></li></div>
+
+            <li><a id='logout'  data-role='button' data-shadow="false" class="">Logout</a></li>
+
+		</ul>
+
+
+    </div>
+
+	</div>
+        
+        </div>
+    
+   
+<!--End of mydetails page-->
+
+
+<!--Start of past-orders page ----------->
+	
+
+<!--End of past orders page------------->
+
+<!--Start of my delivery addresses page-->
+
+
+
+</div>
+
+
+
+<!--Delete account -->
+			<div data-role="page" id="delete-account-page">
+
+				<h1>Are you sure you want to delete your account?</h1>
+					This cannot be undone
+					<a href="#settings-home" id='keep-account' data-role='button' class="button-block">Nevermind, keep my account!</a>
+					<a href='#login' data-role="button" id="delete-account" class="right" value="Delete">Delete my account</a>
+
+
+			</div>
+	<!--Delete account end-->
+	<!--About page start-->
+
+
+    <script src='js/pulltorefresh.js'></script>
+    <script>
+        
+        function hide() {
+              $('#pulrefresh').css('display','none');
+        }
+      /* global PullToRefresh */
+      PullToRefresh.init({
+        mainElement: '#listview',
+          instructionsReleaseToRefresh: "Release to view Search Results",
+          instructionsPullToRefresh: "Searching for Orders",
+      instructionsRefreshing: "Searching for Orders",
+          refreshTimeout: 1300,
+        onRefresh: function() {
+
+
+              $("#listview").html("");
+
+
+             var url = "http://dropzy.site/json.php";
+  $.getJSON(url, function(result) {
+      console.log(result);
+      $.each(result, function(i, field) {
+          var orderid = field.orderid;
+
+
+          var itemname = field.itemname;
+          var pickup = field.pickup;
+          var locationname = field.locationname;
+          var price = field.price;
+          var lat = field.lat;
+          var long = field.long;
+          var idorderer = field.idorderer;
+          var pickuplat = field.pickuplat;
+          var pickuplong = field.pickuplong;
+          var itemdetails = field.itemdetails;
+        
+
+
+          // Below eliminates the risk of any unwarrented apostrophies disrupting the transfer of data between pages in the URLs. URL Parameters are the primary source of data transfer in our application so this is very neccessary.
+//             locationname = locationname.replace("'", '');
+//          pickup = pickup.replace("'", '');
+//          pickup = pickup.replace("&", 'and'); 
+                
+              $("#listview").append("<a data-role='none'class='item' style='background-color: white; border-left: 1px solid rgba(0,0,0,0.09); border-right: 1px solid rgba(0,0,0,0.00); border-bottom: 1px solid rgba(0,0,0,0.2); border-top: 1px solid rgba(0,0,0,0.2); -webkit-box-shadow: 0px 4px 5px -2px rgba(217,217,217,0.61);-moz-box-shadow: 0px 4px 5px -2px rgba(217,217,217,0.61); box-shadow: 0px 4px 5px -2px rgba(217,217,217,0.61); float: left; margin-left: -5vw; color: grey; text-decoration:none;  width: 105vw; padding: 3vw; margin-bottom: 0px;' data-transition: slide; rel='external'  href='#order-route?orderid=" + orderid + "&itemname=" + itemname + "&pickup=" + pickup + "&price=" + price +  "&lat=" + lat + "&long=" + long + "&idorderer=" + idorderer + "&locationname=" + locationname + "&pickuplat=" + pickuplat + "&pickuplong=" + pickuplong + "&itemdetails=" + itemdetails + "'><p class='order-items' style='font-size: 17px; font-weight: 300; top: 100%; left: 2vw; padding-top: 2vh; opacity: 0.8; color: black;'>"+ price + "</p><p id='order-price' style='float: right; right: 10vw; top: -20px; font-size: 16px; font-weight: 300; text-align: left; '>" + "</p><p class='order-locations' style='font-size: 12px; font-weight: 300; width: 60vw;text-align: left; left: 35vw; top: 1vh; opacity: 0.6;'>" + pickup.substring(0,31) + "..</p><p class='order-locations' style='font-size: 11px; width: 60vw;text-align: left; left: 35vw; top: 3.3vh!important; opacity: 0.6;'>" + locationname.substring(0,31) + "..</p><img src='images/tofrom.png' style='width: 1vw; opacity: 0; position: relative; left: 2vw; top: -1.5vh;'/><p class='itemname-pull'>" + itemname + "</p><img src='images/tofrom.png' class='to-from'/><div class='lines'></div> <a data-role='none' class='view-order'rel='external' href='#order-route?orderid=" + orderid + "&itemname=" + itemname + "&pickup=" + pickup + "&price=" + price +  "&lat=" + lat + "&long=" + long + "&idorderer=" + idorderer + "&locationname=" + locationname + "&pickuplat=" + pickuplat + "&pickuplong=" + pickuplong + "&itemdetails=" + itemdetails + "'>View</a></a><br>");
+
+      });
+  });
+
+
+
+        }
+      });
+    </script>
+
+</body>
+</html>

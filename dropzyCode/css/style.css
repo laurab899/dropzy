@@ -1,0 +1,5447 @@
+.ui-mobile-rendering>* {
+	visibility: hidden;
+}
+.ui-page-header-fixed {
+	padding-top: 3.5em !important;
+}
+a[href^="http://maps.google.com/maps"] {
+	display: none !important
+}
+a[href^="https://maps.google.com/maps"] {
+	display: none !important
+}
+.gmnoprint a, .gmnoprint span, .gm-style-cc {
+	display: none;
+}
+.gmnoprint div {
+	background: none !important;
+}
+#fiveStar {
+	outline: 0;
+	background-color: none!important;
+	outline-offset: 0!important;
+}
+#set {
+	padding-bottom: 15vh;
+	padding-top: 18vh;
+}
+.header-class {
+	z-index: 100000;
+	position: fixed;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Lucida Grande";
+	top: 0px;
+	background-color: rgba(255, 255, 255, 0.85);
+	width: 100%;
+	height: 50px;
+	fi
+}
+#logout2 {
+	width: 7vw;
+	position: fixed;
+	z-index: 100;
+	right: 3vw;
+	top: 3vh;
+	opacity: 0.6;
+}
+#info-graphic {
+	width: 4vw;
+	position: absolute;
+	top: 2.5vh;
+	left: 2vw;
+	opacity: 0.7;
+}
+#logout {
+	border-bottom: none!important;
+	border-top: none!important;
+	border-left: none!important;
+	border-right: none!important;
+	box-shadow: none!important;
+	padding-bottom: 2vh;
+	color: #a399fd;
+	font-weight: 500;
+	text-decoration: none;
+	text-shadow: none;
+	font-size: 3.8vw;
+	background-color: white;
+	font-weight: 500;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Lucida Grande";
+	width: 42vw;
+	top: 6.7vh;
+	right: -8vw;
+	font-size: 3.4vw;
+	position: fixed;
+	margin-left: -21vw;
+	text-align: center;
+}
+li {
+	box-shadow: none!important;
+}
+/*
+
+
+
+#logout {
+    position: fixed;
+   bottom: 63px;
+    
+        
+    left: 50%;
+    margin-left: -42vw;
+    font-weight: 100;
+    border-radius: 100;
+    text-decoration: none;
+        box-shadow: none!important;
+    text-shadow: none!important;
+    width: 84vw;
+    background-image: url(images/footer-bg.png);
+    height: 5.5vh;
+    padding-top: 1.2vh;
+    padding-bottom: 4vh;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue",
+      "Lucida Grande";
+    margin-bottom: 14vh;
+    font-size: 14px;
+    border-radius: 100px;
+    border: none;
+  
+    letter-spacing: -0.4px;
+}
+*/
+
+.listItemNoIcon .ui-icon {
+	display: none!important;
+}
+#collapse {
+	width: 102vw;
+	margin-left: -1vw;
+	background-color: white;
+}
+#dropoff-header {
+	font-size: 15px;
+	top: 0px;
+	position: relative;
+	left: 50%;
+	color: grey;
+	width: 200px;
+	text-align: center;
+	margin-left: -100px;
+}
+#map {
+	width: 300px;
+	height: 300px;
+	border-radius: 300px;
+	display: block;
+	display: none;
+	left: 50%;
+	margin-left: -40vw;
+	top: 10vh;
+	z-index: 100000000000000000000000000000000000000000000!important;
+	position: absolute;
+	border: 1px solid lightgray;
+	-webkit-box-shadow: 10px 10px 15px -1px rgba(0, 0, 0, 0.18);
+	-moz-box-shadow: 10px 10px 15px -1px rgba(0, 0, 0, 0.18);
+	box-shadow: 10px 10px 15px -6px rgba(0, 0, 0, 0.18);
+}
+#map.animated {
+	transform: scale(3);
+}
+#orderer-details {
+	width: 100%;
+	height: 50px;
+	background-color: rgba(255, 255, 255, 0.9);
+	border-bottom: 0.5px solid lightgrey;
+	position: absolute;
+	z-index: 100000000000000;
+	top: 50%;
+}
+h {
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Lucida Grande";
+}
+#orderer-name {
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Lucida Grande";
+	position: absolute;
+	width: 200px;
+	left: 50%;
+	margin-left: -100px;
+	top: 15px;
+	font-size: 18px;
+	color: black;
+	opacity: 0.6;
+	text-align: center;
+	font-weight: 100;
+	letter-spacing: -0.4px;
+}
+#current-location-btn {
+	width: 10vw;
+	z-index: 10000000;
+	height: 10vw;
+	top: 45vh;
+	right: 3vw;
+	;
+	border-radius: 100px;
+	background-color: white;
+	position: absolute;
+	-webkit-box-shadow: -9px 10px 14px -5px rgba(161, 158, 161, 1);
+	-moz-box-shadow: -9px 10px 14px -5px rgba(161, 158, 161, 1);
+	box-shadow: -9px 10px 14px -8px rgba(161, 158, 161, 1);
+}
+#current-pos-icon {
+	width: 8vw;
+	position: absolute;
+	left: 50%;
+	margin-left: -4vw;
+	top: 50%;
+	margin-top: -4vw;
+	opacity: 0.5;
+	border-radius: 100px;
+}
+#inctext {
+	font-size: 4vw;
+	position: relative;
+	left: 15vw;
+	opacity: 0.5;
+	top: -2.9vh;
+	display:
+}
+#directions-infobox {
+    display: none;
+	width: 92vw;
+	height: 13vh;
+	left: 50%;
+	margin-left: -46vw;
+	position: absolute;
+	top: 44vh;
+	z-index: 1000;
+	border: 1px solid rgba(134, 144, 245, 0.4);
+	color: grey;
+	
+    
+    background-color: #ffffff;
+  -webkit-box-shadow: 3px 13px 40px -8px rgba(0,0,0,0.18);
+-moz-box-shadow: 3px 13px 40px -8px rgba(0,0,0,0.18);
+box-shadow: 3px 13px 40px -8px rgba(0,0,0,0.18);
+}
+#delivery-header {
+	position: absolute;
+	width: 100vw;
+	height: 7vh;
+	top: 33.2vh;
+	left: 0;
+	z-index: 10000000000000;
+	background-color: rgba(0, 0, 0, 0.02);
+	border-bottom: 1px solid rgba(0, 0, 0, 0.06)
+}
+#summary-orderer-name {
+	position: absolute;
+	left: 50%;
+	font-size: 4vw;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Lucida Grande"!;
+	font-weight: 100;
+	width: 50vw;
+	margin-left: -25vw;
+	top: 4vw;
+	text-align: center;
+}
+#itemnamefield {
+	font-size: 4.2vw!important;
+	background: url(images/form-itemname.svg) no-repeat scroll 4.5vw 3.6vw;
+	background-size: 4.5vw;
+}
+#title-itemprice {
+	position: fixed;
+	width: 50vw;
+	font-size: 4vw;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Lucida Grande"!important;
+	font-weight: 00;
+	padding-right: 4vw;
+	font-weight: 400;
+	opacity: 0.3;
+	left: 46vw;
+	top: 75.7vh;
+	z-index: 1000000000000000000000000000000;
+	text-align: right;
+	letter-spacing: -0.1vw;
+}
+#title-itemname {
+	position: fixed;
+	width: 50vw;
+	font-size: 4vw;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Lucida Grande"!important;
+	font-weight: 00;
+	padding-right: 4vw;
+	font-weight: 400;
+	opacity: 0.3;
+	left: 46vw;
+	top: 63.7vh;
+	z-index: 1000000000000000000000000000000;
+	text-align: right;
+	letter-spacing: -0.1vw;
+}
+#summary-itemname {
+	position: fixed;
+	width: 50vw;
+	font-size: 4vw;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Lucida Grande"!important;
+	padding-left: 8vw;
+	font-weight: 400;
+	padding-right: 4vw;
+	left: 13vw;
+	top: 63.7vh;
+	z-index: 1000000000000000000000000000000;
+	text-align: left;
+	letter-spacing: -0.1vw;
+}
+#delsummary {
+	top: 59vh;
+	
+	width: 80vw;
+	
+	display: none;
+	left: -25vw!important;
+	text-align: center;
+	position: fixed;
+	font-weight: 400;
+	padding-bottom: 1vh;
+	font-size: 3vw;
+	opacity: 0.3;
+}
+#ordericon {
+	width: 6vw;
+	position: fixed;
+	top: 69vh;
+	left: 7vw;
+	background-color: white;
+	z-index: 100000;
+	opacity: 0.4;
+}
+#box10 {
+	top: 62vh!important;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	width: 86vw;
+	left: 50%;
+	margin-left: -40vw;
+	height: 19vh;
+	display: block;
+	text-align: center;
+	position: fixed;
+	font-weight: 400;
+	padding-bottom: 1vh;
+	font-size: 3vw;
+	opacity: 1;
+	background-color: rgba(0, 0, 0, 0.00);
+	z-index: 100000000000000;
+}
+#box11 {
+	top: 62vh!important;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	width: 12vw;
+	left: 50%;
+	margin-left: -46vw;
+	height: 19vh;
+	background-color: #f7f7f7!important;
+	display: block;
+	text-align: center;
+	position: fixed;
+	font-weight: 400;
+	padding-bottom: 1vh;
+	font-size: 3vw;
+	opacity: 1;
+	background-color: rgba(0, 0, 0, 0.00);
+	z-index: 1000000000000000;
+}
+#determine {
+    display: none;
+    position: relative;
+}
+
+#summary-itemdetails {
+	position: fixed;
+	width: 80vw;
+	font-size: 3.2vw!important;
+	text-align: left;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Lucida Grande"!;
+	font-weight: 200;
+	padding-left: 4vw;
+	border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
+	padding-top: 5vh;
+	padding-bottom: 2vh!important;
+	padding-right: 0vw;
+	padding-left: 5vw;
+	left: 16vw;
+	top: 65.7vh;
+    opacity: 0.6;
+	z-index: 1000000000000000000000000000000;
+	letter-spacing: 0.2vw;
+}
+#deliverpage-iconitemname {
+	width: 4.3vh;
+	position: absolute;
+	top: 66.4vh;
+	left: 50%;
+	border: 1px dashed rgba(0, 0, 0, 0.3);
+	background-color: white;
+	padding: 1.5vw!important;
+	opacity: 1;
+	border-radius: 100px;
+	margin-left: -29vw;
+	z-index: 1000000;
+	display: none;
+}
+#info {
+	width: 16vw;
+	position: absolute;
+	top: 69.5vh;
+	opacity: 0.4;
+	display: none;
+}
+#itemprice-area {
+	top: 19.5vh;
+	background: url(images/pricetag.svg) no-repeat scroll 4.9vw 1vw;
+	background-size: 4.0vw;
+}
+#itemprice-area:focus {
+	top: 19.5vh;
+	background: url(images/icons3-03.png) no-repeat scroll 4.9vw 1vw;
+	background-size: 5vw;
+}
+#deliverpage-iconitemprice {
+	width: 4.3vh;
+	position: absolute;
+	top: 66.4vh;
+	right: 50%;
+	border: 1px dashed rgba(0, 0, 0, 0.3);
+	background-color: white;
+	padding: 1.5vw!important;
+	opacity: 1;
+	border-radius: 100px;
+	margin-right: -29.5vw;
+	z-index: 1000000;
+	display: none;
+}
+#inc-fee {
+	color: red;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Lucida Grande"!;
+	font-size: 12px;
+	font-style: italic;
+	opacity: 0.7;
+}
+#abandon {
+	width: 9vw;
+	position: absolute;
+	right: 5vw;
+	top: 8vh;
+    opacity: 0.3;
+	z-index: 100000;
+	display: none;
+}
+#workaddress {
+	border-bottom: 0.5px solid rgba(0, 0, 0, 0.4);
+	border-top: 0px!important;
+	border-left: 0px!important;
+	border-right: 0px!important;
+	border-radius: 0px;
+	font-weight: 200!important;
+	height: 7.2vh!important;
+	background: url(images/suitcase.svg) no-repeat scroll 5.2vw 3.6vw;
+	background-size: 5.0vw;
+}
+#homeaddress {
+	font-weight: 200!important;
+	background: url(images/homeicon.svg) no-repeat scroll 5.2vw 3.6vw!important;
+	background-size: 4.9vw!important;
+	border-bottom: 0.5px solid rgba(0, 0, 0, 0.4);
+	border-left: 0px!important;
+	border-right: 0px!important;
+	border-radius: 0px;
+	height: 7.2vh!important;
+}
+#showonboarding {
+	width: 7vw;
+	position: absolute;
+	z-index: 1000;
+	top: 5vh;
+	left: 3vw;
+	display: none;
+	opacity: 0.2;
+}
+#summary-itemprice {
+	position: fixed;
+	width: 50vw;
+	font-size: 4vw;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Lucida Grande"!important;
+	padding-left: 8vw;
+	font-weight: 400;
+	padding-right: 4vw;
+	left: 13vw;
+	top: 76vh;
+	z-index: 1000000000000000000000000000000;
+	text-align: left;
+	letter-spacing: -0.1vw;
+}
+#prefix353 {
+	position: fixed;
+	top: 22.09vh;
+	left: 16vw;
+	font-size: 3.5vw;
+	display: none;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Lucida Grande"!;
+	color: white;
+	text-shadow: none;
+	font-weight: 400;
+	z-index: 10000000000000000000000;
+}
+#added-info {
+	position: absolute;
+	width: 57vw;
+	font-size: 2.8vw;
+	left: 50%;
+	margin-left: -9vw;
+	top: 41.4vh;
+	z-index: 10000000000;
+	opacity: 1;
+	color: grey;
+	display: none;
+	background-color: #d3e7ff;
+	text-decoration: none;
+	text-shadow: none;
+	font-weight: 100;
+	padding-top: 1.5vh;
+	padding-bottom: 1.8vh;
+	padding-right: 1.4vw;
+	padding-right: 2vw;
+	padding-left: 7.4vw;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+#phone-order {
+	position: relative;
+	width: 35px;
+	height: 35px;
+	top: 1vh;
+	border: 1px solid #7fb7fa;
+	left: 2vw;
+	opacity: 0.8;
+	object-fit: cover;
+	border-radius: 100px;
+}
+#delivery-summary {
+	width: 100%;
+	height: 56vh;
+	left: -2px;
+	position: fixed;
+	bottom: 35px;
+	overflow: hidden;
+	font-weight: 300;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Lucida Grande";
+}
+#summary-dropoff {
+	font-size: 3.7vw;
+	width: 90vw;
+	left: 50%;
+	top: 31%;
+	font-weight: 400;
+	margin-left: -36vw;
+	position: relative;
+	text-align: left;
+	color: #a399fd;
+}
+#tofromto {
+	display: none;
+	height: 10vh;
+	position: relative;
+	top: -5.55vh;
+	left: 6vw;
+}
+#toofrom {
+	width: 3.5vw;
+	opacity: 0.8;
+	left: 8vw;
+	top: 45.3vh;
+	z-index: 1000000;
+    display: none;
+	position: absolute;
+}
+#summary-pickup {
+	font-size: 3.7vw;
+	width: 90vw;
+	left: 50%;
+	top: 18%;
+	font-weight: 300;
+	margin-left: -36vw;
+	position: relative;
+	text-align: left;
+	color: black;
+}
+#addresses-form {
+	margin: 0!important;
+	top: -10vh!important;
+	box-shadow: none!important!important;
+	background: white!important;
+}
+#user-current-address {
+	font-size: 3.7vw;
+	width: 90vw;
+	left: 50%;
+	top: 7%;
+	z-index: 1000000;
+	font-weight: 300;
+	margin-left: -36vw;
+	position: relative;
+	text-align: left;
+	color: black;
+}
+#location {
+	width: 100vw;
+	background-color: rgba(255, 255, 255, 1);
+	display: none;
+	position: relative;
+	z-index: 4000000;
+	height: 100vh;
+	overflow: hidden;
+	bottom: 0;
+}
+#pickup-location {
+	width: 100vw;
+	background-color: white;
+	display: none;
+	position: relative;
+	z-index: 4000000;
+	height: 100vh;
+	overflow: hidden;
+	bottom: 0;
+}
+.activeicon {
+	left: -40px;
+	top: 27px;
+	position: relative;
+}
+.orderitemname {
+	font-family: Helvetica Neue, helvetica, arial, verdana, sans-serif;
+	font-weight: 200;
+	color: darkslategrey;
+	font-size: 18px;
+	margin-bottom: 2vh;
+}
+.orderlocation {
+	font-size: 10px;
+	margin-bottom: 5vw;
+}
+#price {
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Lucida Grande"!important;
+	height: 6.6vh;
+	text-shadow: none;
+	text-align: right;
+	z-index: 1000000;
+	font-size: 4vw;
+	font-weight: 400;
+	position: fixed;
+	width: 80vw;
+	;
+	border-radius: 5px;
+	position: fixed;
+	left: 50%;
+	margin-left: -45.5vw;
+	top: 58.4vh;
+	padding-top: 9px;
+	padding-bottom: 9px;
+}
+#fee {
+	font-family: Helvetica Neue, helvetica, arial, verdana, sans-serif;
+	height: 6.6vh;
+	text-align: left;
+	z-index: 1000000;
+	text-align: right;
+	font-size: 4vw;
+	font-weight: 400;
+	position: fixed;
+	padding-left: 5.6vw;
+	width: 80vw;
+	;
+	border-radius: 5px;
+	position: fixed;
+	left: 50%;
+	margin-left: -45.5vw;
+	top: 62vh;
+	padding-top: 9px;
+	padding-bottom: 9px;
+	opacity: 0.5;
+}
+#total {
+	font-family: Helvetica Neue, helvetica, arial, verdana, sans-serif;
+	height: 6.6vh;
+	text-align: left;
+	color: black;
+	text-align: right;
+	font-size: 4.3vw;
+	font-weight: 500;
+	position: fixed;
+	padding-left: 18vw;
+	width: 69vw;
+	;
+	border-radius: 5px;
+	position: fixed;
+	left: 16vw;
+	opacity: 0.8;
+	top: 71.6vh;
+	padding-top: 9px;
+	padding-bottom: 9px;
+	text-shadow: none;
+}
+#plus {
+	font-family: Helvetica Neue, helvetica, arial, verdana, sans-serif;
+	background-color: rgba(255, 255, 255, 0.94);
+	height: 10vh;
+	text-align: left;
+	border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+	text-align: center;
+	font-size: 5.4vw;
+	font-weight: 500;
+	position: fixed;
+	padding-left: 59vw;
+	width: 69vw;
+	;
+	position: fixed;
+	left: 50%;
+	padding-top: 4.3vh;
+	margin-left: -34vw;
+	font-weight: 400!important;
+	top: 58vh;
+}
+#eurosymbol {
+	position: relative;
+	opacity: 0.5;
+	height: 14px;
+	font-size: 17px;
+	font-weight: 400;
+	display: none;
+	top: -395.6px;
+	padding-left: 12vw;
+}
+#itemprice {
+	width: 84vw;
+	font-size: 4.2vw!important;
+	color: rgba(0, 0, 0, 1);
+	border-top: none;
+	background: url(images/pricetag.svg) no-repeat scroll 4.9vw 4vw;
+	background-size: 4.0vw;
+}
+#itemprice::placeholder {
+	color: rgba(0, 0, 0, 0.5);
+	font-weight: 300;
+	font-size: 1em!important;
+}
+.orderprice {
+	font-size: 14px;
+	font-size: 200;
+	position: relative;
+	right: -50px;
+}
+.item-note {
+	color: black;
+	font-size: 11px;
+	float: right;
+	padding-right: 50px;
+}
+.orderlist {
+	border-bottom: 1px solid x, 6, 6, 0.2);
+	left: 0px;
+	font-family: Helvetica Neue, helvetica, arial, verdana, sans-serif;
+	padding-top: 5px;
+	padding-left: 50px;
+	width: 100%;
+	position: relative;
+}
+.shopphoto {
+	width: 50px;
+	border: 1px solid rgba(6, 6, 6, 0.2);
+	border-radius: 5px;
+}
+#pickup-selection-title {
+	font-family: Helvetica Neue, helvetica, arial, verdana, sans-serif;
+	top: 20px;
+	font-size: 16px;
+	position: absolute;
+	left: 50%;
+	text-align: center;
+	margin-left: -70px;
+	width: 140px;
+	font-weight: 200;
+	opacity: 0.5;
+}
+#or {
+	background-color: white;
+	width: 40px;
+	color: rgba(0, 0, 0, 0.5);
+	z-index: 1000000000000;
+	font-size: 14px;
+	text-decoration: none;
+	text-shadow: none;
+	position: absolute;
+	left: 50%;
+	margin-left: -20px;
+	top: 59.7vh;
+	padding-left: 3vw;
+	padding-right: 3vw;
+	font-weight: 100;
+}
+#alernative {
+	position: absolute;
+	top: 61vh;
+	width: 90vw;
+	text-align: center;
+	left: 50%;
+	opacity: 0.8;
+	border-top: 0.5px solid lightgray;
+	margin-left: -45vw;
+	padding-top: 4vh;
+}
+input[type='radio'] {
+	transform: scale(1.4);
+}
+.radios {
+	position: relative;
+	left: 75vw;
+	top: -5vh;
+	color: red;
+	width: 10px;
+	border-radius: 100px;
+	border: 2px solid #648EF8;
+	height: 10px;
+	opacity: 0.5;
+}
+.activeradio {
+	background-color: red;
+}
+}
+p8 {
+	font-family: Helvetica Neue, helvetica, arial, verdana, sans-serif;
+	color: rgba(6, 6, 6, 0.6);
+	font-size: 14px;
+	font-weight: 100;
+	width: 250px;
+	left: 50%;
+	display: none;
+	text-align: center;
+	top: 20px;
+	position: absolute;
+	margin-left: -105px
+}
+.shopname {
+	position: relative;
+	top: -6.5vh;
+	left: 20vw;
+	font-size: 14px;
+	text-align: left;
+}
+#selected-store {
+	display: none;
+}
+#pickup-selection-container {
+	width: 85vw;
+	height: 45vh;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	left: 50%;
+	margin-left: -42vw;
+	background-color: rgba(0, 0, 0, 0.02);
+	top: 75px;
+	z-index: 10000;
+	position: absolute;
+	border: 1px solid rgba(6, 6, 6, 0.2);
+}
+#select {
+	width: 80vw;
+	left: 50vw;
+	text-align: center;
+	margin-left: -40vw;
+	top: 7vh;
+	opacity: 0.8;
+}
+#pickup-location-field {
+	background: url(images/1x/shopbare.png) no-repeat scroll 4.7vw 4.8vw;
+	background-size: 4.2vw;
+	height: 16vh!important;
+	width: 92vw!important;
+	padding-right: 15vw!important;
+	padding-top: 2vh;
+	font-size: 4.2vw!important;
+}
+#pickup-location-form {
+	position: absolute;
+	top: 68vh;
+	width: 84vw;
+	left: 50%;
+	margin-left: -42vw;
+}
+#pickup-location-input {
+	display: block;
+}
+.shop {
+	padding-left: 2vw;
+	padding-top: 2vw;
+	padding-bottom: 2vw;
+	height: 10vh;
+	border-bottom: 1px solid rgba(6, 6, 6, 0.2);
+}
+.active {
+	background-color: rgba(6, 6, 6, 0.05);
+}
+#delivery-information-header {
+	position: fixed;
+	left: 50%;
+	margin-left: -25vw;
+	text-align: center;
+	z-index: 1000000;
+	top: 20vh;
+	width: 50vw;
+	color: grey;
+	font-size: 4vw;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Lucida Grande";
+	font-weight: 200;
+}
+#review-request {
+	position: absolute;
+	z-index: 10000000;
+}
+#opp-user-pic {
+	position: relative;
+	width: 70px;
+	height: 70px;
+	background-color: white;
+	border: 2px solid lightgray;
+	border-radius: 1000px;
+	display: none;
+	left: 50%;
+	margin-left: -120px;
+	top: -60px;
+	z-index: 90000000000000000000000000000;
+}
+.loginicons {
+	width: 5vw;
+}
+#ico-user {
+	position: absolute;
+	top: 2vh;
+	left: 5vw;
+	z-index: 10000000;
+}
+#ico-pass {
+	position: absolute;
+	top: 12vh;
+	left: 5vw;
+	z-index: 10000000;
+}
+#btn-arrow {
+	width: 20px;
+	-moz-transform: scaleX(-1);
+	-o-transform: scaleX(-1);
+	-webkit-transform: scaleX(-1);
+	transform: scaleX(-1);
+	filter: FlipH;
+	-ms-filter: "FlipH";
+	position: relative;
+	left: 20vw;
+	top: 5px;
+}
+#upload-photo {
+	width: 8vw;
+	position: relative;
+	left: 50%;
+	z-index: 100;
+	top: 2vh;
+	margin-left: -12vw;
+}
+#mydetails-link {
+	background: url(images/user.svg) no-repeat scroll 3.4vw 1.6vw;
+	background-size: 5.5vw;
+}
+#mypayments-link {
+	background: url(images/credit-card.svg) no-repeat scroll 4vw 1.4vw;
+	background-size: 5vw;
+}
+#aboutlink {
+	background: url(images/round-help-button.svg) no-repeat scroll 3.8vw 1.7vw;
+	background-size: 4.7vw;
+}
+#myorders-link {
+	background: url(images/ordericonn.png) no-repeat scroll 4.1vw 1.4vw;
+	background-size: 4.9vw;
+}
+#my-saved-addresses-link {
+	background: url(images/placeholder.svg) no-repeat scroll 3.4vw 1.4vw;
+	background-size: 5.3vw;
+}
+#settings-form {
+	line-height: 0px;
+}
+#settings-user-pic {
+	position: relative;
+	/* */
+	width: 30vw;
+	height: 30vw;
+	object-fit: cover;
+	border: 4px solid #648cf7;
+	border-radius: 100px;
+	left: 50%;
+	margin-left: -15vw;
+	top: 2vh!important;
+	z-index: 100;
+	-webkit-box-shadow: 1px 15px 17px -6px rgba(0, 0, 0, 0.12);
+	-moz-box-shadow: 1px 15px 17px -6px rgba(0, 0, 0, 0.12);
+	box-shadow: 1px 15px 17px -6px rgba(0, 0, 0, 0.10);
+}
+#heading {
+	position: fixed;
+	top: -3vh;
+	padding-top: 13vh;
+	padding-bottom: 3vh;
+	font-size: 16px;
+	width: 100vw;
+	font-weight: 100;
+	left: 0;
+	text-align: center;
+	letter-spacing: -0.5px;
+}
+#rating {
+	position: absolute;
+	top: 65vh;
+	font-size: 20px;
+	letter-spacing: 0.5px;
+	width: 20vw;
+	left: 50%;
+	opacity: 0.2;
+	margin-left: -10vw;
+	text-align: center;
+}
+#orderer-address {
+	position: fixed;
+	z-index: 100000;
+	opacity: 0.8;
+	top: 22vh;
+	width: 4.3vh;
+	position: absolute;
+	left: 50%;
+	margin-left: -3.6vw;
+	border: 1px dashed rgba(0, 0, 0, 0.3);
+	background-color: white;
+	padding: 1.5vw!important;
+	opacity: 1;
+	border-radius: 100px;
+	z-index: 1000000;
+}
+img[userMarker] {
+	border-radius: 100px;
+	border: 1px solid #000 !important;
+}
+#locationname {
+	position: relative;
+	top: 37.6vh;
+	font-size: 4vw;
+	letter-spacing: 0.2px!important;
+	width: 60vw;
+	left: 50%;
+	font-weight: 400 !important;
+	margin-left: -30vw;
+	text-align: left;
+	border-top: 1px dashed rgba(0, 0, 0, 0.1);
+	padding-top: 1.5vh;
+}
+#review {
+	background-color: white;
+	border: 1px solid rgba(0, 0, 0, 0.04);
+	border-radius: 10px;
+	padding-bottom: 13vh;
+	width: 84vw;
+	left: 50%;
+	margin-left: -42vw;
+	position: fixed;
+	height: 80vh;
+	top: 8vh;
+	z-index: 40000000000000000000000000000!important;
+	display: block;
+}
+.to-from {
+	width: 3.2vw!important;
+	margin-left: 5vw!important;
+}
+#to-from-02 {
+	position: absolute;
+	z-index: 10000;
+	height: 12vh;
+	left: 50%;
+	padding-top: 1vh;
+	padding-bottom: 1vh;
+	top: 29.5vh;
+	margin-left: -36.5vw;
+	opacity: 1;
+	background-color: white;
+}
+#header-01 {
+	width: 300px;
+	position: fixed;
+	z-index: 100000;
+	left: 50%;
+	margin-left: -34vw;
+	top: 17vh;
+	opacity: 0.4;
+	font-size: 3vw;
+	display: none;
+}
+#header-02 {
+	width: 300px;
+	position: fixed;
+	z-index: 100000;
+	left: 16.5%;
+	display: none;
+	top: 37vh;
+	opacity: 0.4;
+	font-size: 3vw;
+}
+#header-04 {
+	width: 300px;
+	position: fixed;
+	z-index: 100000;
+	left: 50%;
+	margin-left: 10vw;
+	top: 55vh;
+	font-weight: 300;
+	font-size: 3.2vw;
+	color: #648cf7;
+	display: none;
+}
+.deliver-buttons {
+	height: 8vh !important;
+	top: 68.6vh;
+	border-radius: 0px!important;
+	box-shadow: none!important;
+	position: absolute!important
+}
+#deliverer-itemname {
+	position: fixed;
+	top: 9vh;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Lucida Grande";
+	font-weight: 400;
+	left: 20vw;
+	font-size: 4vw;
+}
+#deliverer-itemdetails {
+	position: fixed;
+	top: 14vh;
+	opacity: 0.3;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Lucida Grande";
+	font-weight: 400;
+	left: 20vw;
+	font-size: 4vw;
+}
+#deliverer-itemcost {
+	position: fixed;
+	top: 19vh;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Lucida Grande";
+	font-weight: 400;
+	text-shadow: none;
+	left: 20vw;
+	font-size: 4vw;
+}
+#deliverer-pickup {
+	position: fixed;
+	top: 25vh;
+	width: 56vw;
+	padding-bottom: 1vh;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Lucida Grande";
+	font-weight: 400;
+	text-shadow: none;
+	left: 20vw;
+	opacity: 0.8;
+	font-size: 4vw;
+	border-top: 1px solid rgba(0, 0, 0, 0.1);
+	padding-top: 2vh;
+}
+#deliverer-address {
+	position: fixed;
+	top: 35vh;
+	padding-bottom: 1vh;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Lucida Grande";
+	font-weight: 400;
+	text-shadow: none;
+	left: 20vw;
+	width: 56vw;
+	font-size: 4vw;
+}
+#inorder-ico1 {
+	position: absolute;
+	width: 5vw;
+	left: 3vw;
+	top: 1.2vh;
+}
+#inorder-ico2 {
+	position: absolute;
+	width: 5.6vw;
+	left: 3vw;
+	top: 10.9vh;
+}
+#inorder-ico3 {
+	opacity: 0.7;
+	position: absolute;
+	width: 6.6vw;
+	left: 3vw;
+	top: 20vh;
+}
+#deliverer-fullname {
+	font-size: 4vw;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Lucida Grande";
+	font-weight: 100;
+	left: 50%;
+	position: absolute;
+	margin-left: -40vw;
+	width: 80vw;
+	top: 60vh;
+	text-align: center;
+}
+#icon-call {
+	width: 7vw;
+	position: relative;
+	top: -.5vh;
+	opacity: 0.5;
+}
+#icon-message {
+	width: 9vw;
+	opacity: 0.5;
+	top: -1vh;
+	position: relative;
+}
+#icon-cancel {
+	width: 14vw;
+	position: relative;
+	top: -2.5vh;
+	opacity: 0.5;
+}
+#onway {
+	font-size: 3.5vw;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Lucida Grande";
+	font-weight: 100;
+	left: 50%;
+	position: relative;
+	width: 80vw;
+	text-align: center;
+	margin-left: -20vw;
+	top: 2vh;
+	z-index: 400000000000000;
+}
+#deliver-call {
+	position: absolute;
+	height: 58px;
+	float: left;
+	left: 34%!important;
+	width: 33.50%;
+	z-index: 10000001;
+	border: 0.5px solid (0, 0, 0, 0.1);
+	background-color: #f7f7f7;
+	text-decoration: none;
+}
+#deliver-message {
+	position: relative;
+	height: 58px;
+	z-index: 10000001;
+	float: right;
+	right: -0.1%;
+	width: 32.40%;
+	border-bottom-right-radius: 10px!important;
+	background-color: #f7f7f7;
+	text-decoration: none;
+}
+#deliver-cancel {
+	position: absolute;
+	height: 58px;
+	float: left;
+	top: 44.§vh!important;
+	left: 0.%;
+	width: 33.50%;
+	background-color: #f7f7f7;
+	border-left: 0.5px solid (0, 0, 0, 0.06);
+	border-bottom-left-radius: 10px!important;
+	text-decoration: none;
+}
+#in-order {
+	background-color: white;
+	border: 1px solid rgba(0, 0, 0, 0.04);
+	border-radius: 10px;
+	width: 84vw;
+	left: 50%;
+	margin-left: -42vw;
+	position: relative;
+	height: 78vh;
+	top: 8vh;
+	z-index: 40000000000000000!important;
+	display: none;
+}
+#complete-text {
+	font-size: 4vw;
+	position: absolute;
+	width: 70vw;
+	left: 50%;
+	margin-left: -35vw;
+	text-align: center;
+	top: 20vh;
+}
+#complete-text-deliverer {
+	font-size: 4.5vw;
+	position: absolute;
+	width: 70vw;
+	left: 50%;
+	margin-left: -35vw;
+	text-align: center;
+	top: 18vh;
+}
+#smiley {
+	width: 12vw;
+	opacity: 0.3;
+	left: 50%;
+	position: absolute;
+	margin-left: -6vw;
+	top: 7vh;
+}
+#smiley-deliverer {
+	width: 16vw;
+	opacity: 0.9;
+	left: 50%;
+	position: absolute;
+	margin-left: -8vw;
+	top: 5vh;
+}
+#rating2 {
+	width: 30vw;
+	left: 50%;
+	position: absolute;
+	margin-left: -15vw;
+	top: 37vh;
+	opacity: 0.4;
+}
+#please-review {
+	font-size: 3vw;
+	position: absolute;
+	width: 70vw;
+	left: 50%;
+	margin-left: -35vw;
+	text-align: center;
+	top: 30vh;
+	opacity: 0.5;
+}
+#recieved-text-item {
+	font-size: 4vw;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Lucida Grande"!important;
+	text-align: center;
+	top: 0.5vh;
+}
+
+#recieved-text-item {
+    font-size: 3vw;
+    opacity: 0.6;
+    padding-bottom: 1vh;
+}
+#please-review-deliverer {
+	font-size: 3.5vw;
+	position: absolute;
+	width: 70vw;
+	left: 50%;
+	margin-left: -35vw;
+	text-align: center;
+	top: 25vh;
+	opacity: 0.5;
+	border-bottom: 1px dashed grey;
+	padding-bottom: 3vh;
+}
+#payment-received {
+	font-size: 7vw;
+	position: absolute;
+	width: 70vw;
+    display: none;
+	left: 50%;
+	margin-left: -35vw;
+	text-align: center;
+	top: 33vh;
+	opacity: 1;
+}
+#exit-delivery {
+	background-image: url(images/footer-bg.png);
+	background-size: cover;
+	position: absolute;
+	left: 50%;
+	margin-left: -36.1vw;
+	top: 42vh;
+	height: 6.3vh!important;
+	width: 72.2vw;
+	box-shadow: none!important;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	height: 6.5vh;
+	color: white;
+	text-shadow: none;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Lucida Grande";
+	font-weight: 400;
+	font-size: 14px;
+	border-radius: 0px;
+	padding-bottom: 0vh;
+	padding-top: 1.5vh;
+	letter-spacing: -0.4px;
+}
+#finalfee {
+	width: 84vw;
+	position: fixed;
+	top: 47.4vh;
+	font-size: 4.2vw!important;
+	opacity: 1;
+	text-shadow: none;
+	text-align: left;
+	left: 74vw;
+	color: white;
+	font-weight: 300!important;
+	z-index: 10000000000000;
+	font-size: 1em;
+	border-top: none;
+}
+#addedfeepic {
+	width: 5vw;
+	position: absolute;
+	left: 2vw;
+	top: 2vh;
+}
+#addedFee {
+	width: 62vw;
+	position: fixed;
+	top: 65.3vh;
+	opacity: 0.3;
+	text-align: left;
+	text-align: center;
+	left: 50%;
+	margin-left: -31vw;
+	color: black;
+	z-index: 100000000;
+	font-size: 3.1vw!important;
+	font-weight: 400!important;
+	text-shadow: none;
+	border: none!important;
+	display: none;
+	padding-left: 9vw!important;
+	padding-right: 2vw!important;
+	/*     border: 1px solid #a28ffe;*/
+	padding-top: 1.5vh;
+	padding-bottom: 1vh;
+	border-top-left-radius: 4vw;
+	border-top-right-radius: 0vw;
+	border-bottom-left-radius: 4vw;
+	border-bottom-right-radius: 0vw;
+}
+#greybox {
+	width: 100vw;
+	height: 35vh;
+	background-color: #f7f7f7;
+	z-index: 1;
+	position: fixed;
+	bottom: 0vh;
+	border-top: 0.5px solid rgba(0, 0, 0, 0.03);
+}
+#wanto {
+	display: block;
+	position: absolute;
+	z-index: 10000000000000000000000000000;
+	font-size: 4.4vw;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Lucida Grande";
+	font-weight: 300!important;
+	top: 82vh;
+	left: 50vw;
+	margin-left: -40vw;
+	width: 80vw;
+	text-align: center;
+	text-shadow: none;
+	display: none;
+	color: white;
+}
+#exit-delivery2 {
+	background-image: url(images/footer-bg.png);
+	background-size: cover;
+	object-fit: cover;
+	position: absolute;
+	left: 50%;
+	margin-left: -36.1vw;
+	top: 42vh;
+	height: 6.3vh!important;
+	width: 72.2vw;
+	box-shadow: none!important;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	height: 6.5vh;
+	color: white;
+	text-shadow: none;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Lucida Grande";
+	font-weight: 400;
+	font-size: 14px;
+	border-radius: 0px;
+	padding-bottom: 0vh;
+	padding-top: 1.5vh;
+	letter-spacing: -0.4px;
+}
+#button1 {
+	background-image: url(images/footer-bg.png);
+	background-size: cover;
+	position: absolute;
+	left: 50%;
+	margin-left: -36.1vw;
+	top: 42vh;
+	height: 6.3vh!important;
+	width: 72.2vw;
+	box-shadow: none!important;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	height: 6.5vh;
+	color: white;
+	text-shadow: none;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Lucida Grande";
+	font-weight: 400;
+	font-size: 14px;
+	border-radius: 0px;
+	padding-bottom: 0vh;
+	padding-top: 1.5vh;
+	letter-spacing: -0.4px;
+}
+#button2 {
+	position: absolute;
+	left: 50%;
+	margin-left: -36.1vw;
+	top: 50vh;
+	height: 6.3vh!important;
+	width: 72.2vw;
+	background-color: white;
+	box-shadow: none!important;
+	border: 2px solid grey;
+	height: 6.5vh;
+	color: grey;
+	text-shadow: none;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Lucida Grande";
+	font-weight: 400;
+	font-size: 14px;
+	border-radius: 0px;
+	
+	padding-bottom: 0vh;
+	padding-top: 1.5vh;
+	letter-spacing: -0.4px;
+}
+#button3 {
+	position: absolute;
+	left: 50%;
+	margin-left: -40vw;
+	top: 52vh;
+	height: 7.2vh!important;
+	width: 80.2vw;
+	background-color: #f7f7f7!important;
+	box-shadow: none!important;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	height: 6.5vh;
+	color: grey;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Lucida Grande";
+	font-weight: 400;
+	font-size: 14px;
+	display: none;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	padding-bottom: 0vh;
+	padding-top: 2vh;
+	letter-spacing: -0.4px;
+}
+#button4 {
+	position: absolute;
+	left: 50%;
+	margin-left: -36.1vw;
+	top: 50vh;
+	height: 6.3vh!important;
+	width: 72.2vw;
+	background-color: white;
+	box-shadow: none!important;
+	border: 2px solid grey;
+	height: 6.5vh;
+	color: grey;
+	text-shadow: none;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Lucida Grande";
+	font-weight: 400;
+	font-size: 14px;
+	border-radius: 0px;
+	padding-bottom: 0vh;
+	padding-top: 1.5vh;
+	letter-spacing: -0.4px;
+}
+#button6 {
+	position: absolute;
+	left: 50%;
+	margin-left: -36.1vw;
+	top: 50vh;
+	height: 6.3vh!important;
+	width: 72.2vw;
+	background-color: white;
+	box-shadow: none!important;
+	border: 2px solid grey;
+	height: 6.5vh;
+	color: grey;
+	text-shadow: none;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Lucida Grande";
+	font-weight: 400;
+	font-size: 14px;
+	border-radius: 0px;
+	;
+	background-position: 2px 40px;
+	padding-bottom: 0vh;
+	padding-top: 1.5vh;
+	letter-spacing: -0.4px;
+}
+#completed-order {
+	background-color: white;
+	border: 1px solid rgba(0, 0, 0, 0.04);
+	border-radius: 10px;
+	width: 80vw;
+	left: 50%;
+	margin-left: -40vw;
+	position: relative;
+	height: 60vh;
+	top: 12vh;
+	z-index: 40000000000000000!important;
+	display: none;
+}
+#pulrefresh {
+    width: 14vw;
+    opacity: 0.1;
+    position: absolute;
+    left: 50%;
+    top: 40vh;
+    margin-left: -7vw;
+    display: none;
+}
+#completed-order-deliverer {
+	background-color: white;
+	border: 1px solid rgba(0, 0, 0, 0.04);
+	border-radius: 10px;
+	width: 80vw;
+	left: 50%;
+	margin-left: -40vw;
+	position: relative;
+	height: 60vh;
+	top: 12vh;
+	z-index: 40000000000000000!important;
+	display: none;
+}
+#delivery-fee {
+	position: fixed;
+	top: 0;
+	left: 50%;
+	margin-left: -10vw;
+	width: 40vw;
+	height: 20.5vh;
+	z-index: 190000000000000;
+}
+#delivery-fee-input {
+	position: fixed;
+	top: 0;
+	left: 50%;
+	display: none;
+	background-color: white;
+	margin-left: 5vw;
+	width: 40vw;
+	border: 2px dashed #648cf7;
+	height: 6.5vh;
+	border-radius: 5px;
+	z-index: 190000000000000;
+	background-color: rgba(0, 0, 0, 0.02);
+	padding-left: 12vw;
+	top: 58.5vh;
+}
+#delivery-fee-input::placeholder {
+	color: black;
+	font-size: 18px;
+}
+#header-03 {
+	width: 80vw;
+	position: fixed;
+	z-index: 100000;
+	left: 50%;
+	margin-left: -32vw;
+	text-align: left;
+	top: 59.9vh;
+	opacity: 1;
+	color: rgba(0, 0, 0, 0.8);
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Lucida Grande"!important;
+	font-size: 3.2vw;
+}
+#header-06 {
+	width: 80vw;
+	position: fixed;
+	z-index: 100000;
+	left: 50%;
+	margin-left: -32vw;
+	text-align: left;
+	top: 63.4vh;
+	opacity: 0.5;
+	color: rgba(0, 0, 0, 0.8);
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Lucida Grande"!important;
+	font-size: 3.2vw;
+}
+#header-07 {
+	width: 80vw;
+	position: fixed;
+	z-index: 100000;
+	left: 50%;
+	margin-left: -32.5vw;
+	text-align: left;
+	font-weight: 500;
+	font-size: 4.3vw;
+	color: black;
+	text-shadow: none;
+	opacity: 0.8;
+	top: 73vh;
+}
+#basket-gradient {
+	position: fixed;
+	z-index: 100000;
+	opacity: 0.8;
+	top: 5vh;
+	width: 4.3vh;
+	position: absolute;
+	left: 50%;
+	margin-left: -3.6vw;
+	border: 1px dashed rgba(0, 0, 0, 0.3);
+	background-color: white;
+	padding: 1.5vw!important;
+	opacity: 1;
+	border-radius: 100px;
+	z-index: 1000000;
+}
+#price-gradient {
+	position: fixed;
+	z-index: 100000;
+	opacity: 0.8;
+	top: 47vh;
+	width: 4.3vh;
+	position: absolute;
+	left: 50%;
+	margin-left: -4vw;
+	border: 1px dashed rgba(0, 0, 0, 0.3);
+	background-color: white;
+	padding: 1.5vw!important;
+	opacity: 1;
+	border-radius: 100px;
+	z-index: 1000000;
+}
+#delivery-item {
+	width: 50%;
+	height: 100px;
+	top: 30vh;
+	border-bottom: 0.3px solid rgba(6, 6, 6, 0.3);
+	right: 0;
+	position: absolute;
+}
+#delivery-item {
+	width: 50%;
+	height: 100px;
+	top: 28vh;
+	border-top: 0.3px solid rgba(6, 6, 6, 0.3);
+	right: 0;
+	position: absolute;
+}
+#delivery-store {
+	left: 50%;
+	top: 33vh;
+	width: 70vw;
+	height: 20.5vh;
+	margin-left: -35vw;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	border-radius: 5px;
+	/* background-color: rgba(0,0,0,0.02);*/
+	background-color: white;
+	position: fixed;
+}
+#message-orderer {
+	position: absolute;
+	left: 15px;
+	top: -20px;
+}
+#more-options-orderer {
+	position: absolute;
+	right: 5px;
+	top: -22px;
+}
+#seemoredirections {
+	z-index: 100000;
+	position: absolute;
+	top: 50vh;
+	width: 10vh;
+	font-size: 11px;
+	display: none;
+}
+#testbtn {
+	position: absolute;
+	z-index: 10000000000000000000000000;
+}
+#walking-btn {
+	z-index: 100000;
+	position: absolute;
+	top: 40vh;
+	left: 40%;
+	width: 10vh;
+	font-size: 11px;
+}
+#driving-btn {
+	z-index: 100000;
+	position: absolute;
+	top: 40vh;
+	left: 60%;
+	width: 10vh;
+	font-size: 11px;
+}
+#timer {
+	z-index: 1000000000000000;
+	position: absolute;
+	font-size: 29px;
+	display: none;
+}
+#directionsinformation {
+	z-index: 100000;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Lucida Grande";
+	font-weight: 150;
+	position: absolute;
+	bottom: 60px;
+	height: 40vh;
+	display: none;
+	background-color: white;
+	width: 100vw;
+	overflow: scroll;
+	padding-top: 2vh;
+	padding-bottom: 2vh;
+	padding-left: 10vw;
+	padding-right: 10vw;
+}
+#travel-time {
+	width: 80px;
+	height: 50px;
+	background-color: white;
+	color: white;
+	display: none;
+	border-radius: 10px;
+	z-index: 100000;
+	position: absolute;
+	top: 20%;
+	right: 20%;
+	font-size: 12px;
+	color: black;
+	text-align: center;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border: 1px solid rgba(0, 0, 0, 0.08);
+}
+#route-map {
+	width: 100vw;
+	height: 35vh;
+	overflow: hidden;
+	top: 0;
+	z-index: 1;
+	position: absolute;
+}
+#search-icon {
+	position: absolute;
+	z-index: 10;
+	opacity: 0.3;
+	width: 50px;
+	left: 50%;
+	margin-left: -25px;
+	top: 30%;
+}
+#availability-text {
+	color: rgba(0, 0, 0, 0.6);
+	letter-spacing: -0.3px;
+	font-weight: 100;
+	font-size: 4vw;
+	width: 30vw;
+	text-align: center;
+	left: 50%;
+	top: 3vh;
+	position: absolute;
+	margin-left: -15vw;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Lucida Grande";
+}
+#deliver-intro {
+	color: rgba(0, 0, 0, 1);
+	position: absolute;
+	top: 40%;
+	line-height: 20px;
+	left: 50%;
+	margin-left: -35%;
+	height: 50%;
+	z-index: 10000000;
+	text-align: center;
+	width: 70%;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Lucida Grande";
+	text-decoration: none;
+	text-shadow: none;
+	font-weight: 100;
+	font-size: 4vw;
+	opacity: 0.4;
+}
+#deliver-interface {
+	position: absolute;
+	z-index: 100000000;
+	background-color: white;
+	border: 1px solid rgba(0, 0, 0, 0.09);
+	-webkit-box-shadow: -1px 0px 43px 6px rgba(0, 0, 0, 0.11);
+	-moz-box-shadow: -1px 0px 43px 6px rgba(0, 0, 0, 0.11);
+	box-shadow: -1px 0px 43px 6px rgba(0, 0, 0, 0.11);
+	border-radius: 5px;
+	width: 100vw;
+	height: 20vh;
+	left: 50%;
+	margin-left: -50vw;
+	bottom: 6.2vh;
+	border-top: 0.5px solid lightgray;
+}
+#mapview-btn {
+	float: left;
+	z-index: 10000000;
+	width: 20%;
+	top: 2vh;
+	height: 50px;
+	left: 50%;
+	display: none;
+	background-color: white;
+	box-shadow: none;
+	border-top-right-radius: 100px;
+	border-bottom-right-radius: 100px;
+	border: 1px solid #8c8ce4;
+	-webkit-box-shadow: 0px 2px 23px 6px rgba(0, 0, 0, 0.11);
+	-moz-box-shadow: 0px 2px 23px 6px rgba(0, 0, 0, 0.11);
+	box-shadow: 0px 0px 23px 6px rgba(0, 0, 0, 0.11);
+}
+#zoomout {
+	height: 20px;
+	left: -3px;
+	position: relative;
+	filter: invert(1);
+	opacity: 0.4;
+}
+#map-deliver-info {
+	position: absolute;
+	border: 3px solid rgba(0, 0, 0, 0.4);
+	width: 50px;
+	height: 50px;
+	opacity: 0.6;
+	top: 45vh;
+	right: 2vw;
+	border-radius: 100px;
+	display: block;
+	z-index: 10000000000000000000000;
+	display: none;
+}
+#another-btn {
+	top: 60.2vh;
+	width: 100vw;
+	text-align: center;
+	color: #a399fd;
+	font-size: 4vw;
+	height: 6.6vh!important;
+	padding-top: 1.5vh;
+	border: 1px dashed #a399fd;
+	font-weight: 100!important;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Lucida Grande"!important;
+	box-shadow: none!important!important;
+	border-radius: 0px!important;
+	border-left: none!important;
+	background: url(images/plus.svg) no-repeat scroll 28.4vw 2.6vw;
+	background-size: 5.5vw;
+	box-shadow: none;
+}
+#home-btn {
+	position: absolute;
+	font-size: 4vw;
+	top: 53.5vh;
+	width: 100vw;
+	color: rgba(0, 0, 0, 0.6);
+	text-align: left!important;
+	background-color: white!important;
+	height: 6.8vh!important;
+	padding-top: 1.5vh;
+	padding-left: 9vw;
+	font-weight: 100!important;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Lucida Grande"!important;
+	font-weight: normal!important;
+	box-shadow: none!important!important;
+	border-radius: 0px!important;
+	border-left: none!important;
+	border-right: none!important;
+	border-bottom: 0.5px solid rgba(0, 0, 0, 0.2)!important;
+	border-top: 0.5px solid rgba(0, 0, 0, 0.2)!important;
+	box-shadow: none;
+}
+#addresses-form {
+	margin: 0!important;
+	top: -10vh!important;
+	box-shadow: none!important!important;
+	background: white!important;
+}
+.settings-ui-btn {
+	color: rgba(0, 0, 0, 0.6);
+	text-align: left!important;
+	background-color: white!important;
+	height: 5.5vh!important;
+	font-size: 4vw!important;
+	font-weight: normal!important;
+	box-shadow: none!important!important;
+	border-radius: 0px!important;
+	border-left: none!important;
+	border-right: none!important;
+	border-bottom: none!important;
+	border-top: none!important;
+	margin-bottom: 0px!important;
+}
+.inputs-settings {
+	position: relative;
+	margin: 0!important;
+	height: 8vh!important;
+	background-color: white!important;
+	border-radius: 1px!important;
+	font-size: 4vw;
+	font-weight: 200;
+	color: #C1C1C1;
+	box-shadow: none!important!important;
+	border-bottom: none!important;
+	border-left: none!important;
+	border-top: none!important;
+	border-right: none!important;
+}
+#work-btn {
+	position: absolute;
+	font-size: 4vw;
+	top: 46.8vh;
+	width: 100vw;
+	color: rgba(0, 0, 0, 0.6);
+	text-align: left!important;
+	background-color: white!important;
+	height: 6.8vh!important;
+	padding-top: 1.5vh;
+	padding-left: 9vw;
+	font-weight: 100!important;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Lucida Grande"!important;
+	font-weight: normal!important;
+	box-shadow: none!important!important;
+	border-radius: 0px!important;
+	border-left: none!important;
+	border-right: none!important;
+	border-bottom: 0.5px solid rgba(0, 0, 0, 0.2)!important;
+	border-top: 0.5px solid rgba(0, 0, 0, 0.2)!important;
+	box-shadow: none;
+}
+#listview {
+	z-index: 10000;
+	display: none;
+}
+#listview-btn {
+	display: none;
+	z-index: 10000000;
+	width: 20%;
+	border-top-left-radius: 100px;
+	border-bottom-left-radius: 100px;
+	height: 50px;
+	border: 1px solid #8c8ce4;
+	background-color: white;
+	top: 2vh;
+	float: right;
+	-webkit-box-shadow: 0px 2px 23px 0px rgba(0, 0, 0, 0.11);
+	-moz-box-shadow: 0px 2px 23px 6px rgba(0, 0, 0, 0.11);
+	box-shadow: 0px 2px 23px 6px rgba(0, 0, 0, 0.11);
+	right: 50%;
+}
+#gmapstag {
+	display: none;
+}
+#gmapss {
+	display: none;
+}
+.gm-style-iw+div {
+	display: none;
+}
+#deliver-map {
+	width: 100%;
+	height: 80%;
+	top: 0px;
+	z-index: 2000;
+	display: none;
+	opacity: 0;
+	position: absolute;
+	box-shadow: none;
+}
+.animated {
+	-webkit-animation-duration: 0.4s;
+	animation-duration: 0.4s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+}
+@-webkit-keyframes slideOutDown {
+	from {
+		-webkit-transform: translate3d(0, 0, 0);
+		transform: translate3d(0, 0, 0);
+	}
+	to {
+		visibility: hidden;
+		-webkit-transform: translate3d(0, 100%, 0);
+		transform: translate3d(0, 100%, 0);
+	}
+}
+@keyframes slideOutDown {
+	from {
+		-webkit-transform: translate3d(0, 0, 0);
+		transform: translate3d(0, 0, 0);
+	}
+	to {
+		visibility: hidden;
+		-webkit-transform: translate3d(0, 100%, 0);
+		transform: translate3d(0, 100%, 0);
+	}
+}
+.slideOutDown {
+	-webkit-animation-name: slideOutDown;
+	animation-name: slideOutDown;
+}
+@-webkit-keyframes slideOutLeft {
+	from {
+		-webkit-transform: translate3d(0, 0, 0);
+		transform: translate3d(0, 0, 0);
+	}
+	to {
+		visibility: hidden;
+		-webkit-transform: translate3d(-100%, 0, 0);
+		transform: translate3d(-100%, 0, 0);
+	}
+}
+#googleMap {
+	height: 85%;
+	width: 100%;
+	position: absolute;
+	z-index: 1;
+	opacity: 0.8;
+	overflow: hidden;
+	top: 0;
+}
+#map2 {
+	height: 22vh;
+	width: 82vw;
+	opacity: 0.0;
+	position: absolute;
+	z-index: 1;
+	overflow: hidden;
+	top: 48vh;
+	left: 50%;
+	margin-left: -41vw;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+}
+#login-form {
+	color: white;
+	position: fixed;
+	width: 84vw;
+	bottom: 33vh;
+	left: 50%;
+	margin-left: -42vw;
+}
+#login-logo {
+	width: 20vw;
+	left: 50%;
+	position: absolute;
+	margin-left: -10vw;
+	top: 20vh;
+}
+#refresh {
+	width: 14vw;
+	opacity: 0.3;
+	top: 3vh;
+	position: relative;
+}
+#no-orders {
+	color: dimgrey;
+	opacity: 0.7;
+	display: none;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF Compact Display", "Lucida Grande";
+	font-weight: 100;
+	font-size: 3.8vw;
+	width: 100vw;
+	text-align: center;
+	left: 50%;
+	position: absolute;
+	margin-left: -50vw;
+	top: 40vh;
+}
+#email {
+	border: 0px solid rgba(255, 255, 255, 0.7);
+	outline-offset: none;
+	margin-bottom: 3vh;
+	color: white!important;
+	height: 6.9vh;
+	top: 0vh;
+	font-weight: 500;
+	text-transform: lowercase;
+	background: url(images/iconuser.png) no-repeat scroll 4.4vw 3.6vw;
+	background-color: rgba(0, 0, 0, 0.34);
+	background-size: 4.5vw;
+}
+#password {
+	height: 44px;
+	border: 0px solid rgba(255, 255, 255, 0.7);
+	outline-offset: none;
+	height: 6.9vh;
+	position: absolute;
+	color: white!important;
+	font-weight: 500;
+	text-transform: lowercase;
+	background: url(images/iconpassword.png) no-repeat scroll 4.4vw 3.6vw;
+	background-size: 4.5vw;
+	background-color: rgba(0, 0, 0, 0.34);
+}
+.reg-form.selectedInput {
+	box-shadow: 10px 10px 53px -7px rgba(0, 0, 0, 0.3);
+}
+.selectedInput {
+	box-shadow: 10px 10px 53px -7px rgba(0, 0, 0, 0.3);
+}
+.ui-page {
+	-webkit-backface-visibility: hidden;
+	bottom: -40px;
+	background-color: white;
+}
+input[type="text"], input[type="password"] {
+	width: 100%;
+	height: 44px;
+	padding-left: 60px;
+	color: grey;
+	font-size: 14px;
+	box-shadow: none;
+	border-radius: 5px;
+}
+#password::placeholder {
+	color: rgba(255, 255, 255, 0.7);
+	font-weight: 300;
+	font-size: 3.8vw;
+}
+#email::placeholder {
+	color: rgba(255, 255, 255, 0.7);
+	font-size: 3.8vw;
+	font-weight: 300;
+}
+/*
+
+#email:focus {
+height: 4.9vh;!important;
+}
+
+#password:focus {
+    height: 4.9vh!important;
+}
+*/
+
+input::placeholder {
+	color: rgba(6, 6, 6, 0.2);
+	font-weight: 100;
+	text-decoration: none;
+	text-shadow: none;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF Compact Display", "Lucida Grande";
+	letter-spacing: -0.4px;
+	font-weight: 100;
+}
+#call-number {
+	background-color: rgba(255, 255, 255, 0.9);
+	z-index: 4000000000000000000000;
+	position: fixed;
+	width: 97vw;
+	text-align: center;
+	left: 1.5vw;
+	font-size: 5vw;
+	padding-top: 2.8vh;
+	padding-bottom: 2.8vh;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+	bottom: 29.9vh;
+	font-weight: 300;
+	color: rgba(0, 0, 0, 0.6);
+}
+#whatsapp-number {
+	background-color: rgba(255, 255, 255, 0.9);
+	z-index: 4000000000000000000000;
+	position: fixed;
+	width: 97vw;
+	text-align: center;
+	left: 1.5vw;
+	font-size: 5vw;
+	padding-top: 2.8vh;
+	padding-bottom: 2.8vh;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	bottom: 20.7vh;
+	text-decoration: none!important;
+	font-weight: 400!important;
+	color: #0080ff;
+}
+#cancel-delivery {
+	background-color: rgba(255, 255, 255, 0.9);
+	z-index: 4000000000000000000000;
+	position: fixed;
+	width: 97vw;
+	text-align: center;
+	left: 1.5vw;
+	font-size: 5vw;
+	padding-top: 2.8vh;
+	padding-bottom: 2.8vh;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	bottom: 11.5vh;
+	font-weight: 350;
+	color: red;
+}
+#sms-number {
+	background-color: rgba(255, 255, 255, 0.9);
+	z-index: 4000000000000000000000;
+	position: fixed;
+	width: 97vw;
+	text-align: center;
+	left: 1.5vw;
+	font-size: 5vw;
+	padding-top: 2.8vh;
+	padding-bottom: 2.8vh;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	bottom: 11.5vh;
+	font-weight: 300;
+	color: #0080ff;
+}
+#cancel-call {
+	background-color: rgba(255, 255, 255, 0.9);
+	z-index: 4000000000000000000000;
+	position: fixed;
+	width: 97vw;
+	text-align: center;
+	left: 1.5vw;
+	font-size: 5vw;
+	padding-top: 2.8vh;
+	padding-bottom: 2.8vh;
+	border-radius: 5px;
+	bottom: 1.5vh;
+	font-weight: 300;
+	color: #0080ff;
+}
+#cancel-message {
+	background-color: rgba(255, 255, 255, 0.9);
+	z-index: 4000000000000000000000;
+	position: fixed;
+	width: 97vw;
+	text-align: center;
+	left: 1.5vw;
+	font-size: 5vw;
+	padding-top: 2.8vh;
+	padding-bottom: 2.8vh;
+	border-radius: 5px;
+	bottom: 1.5vh;
+	font-weight: 400;
+	color: #0080ff;
+}
+.popup-overlay {
+	position: absolute;
+	left: 0;
+	top: 0px;
+	width: 100%;
+	height: 100vh;
+	background: rgba(0, 0, 0, 0.35);
+	z-index: 400000000;
+	display: none;
+	opacity: 1;
+	-webkit-transition-duration: 400ms;
+	transition-duration: 400ms;
+}
+#boxx {
+	background-color: black;
+	opacity: 0.35;
+	width: 100vw;
+	height: 100vh;
+	position: absolute;
+	display: none;
+	z-index: 10000000000000000000000000000000
+}
+#boxx3 {
+	background-color: black;
+	opacity: 0.35;
+	width: 100vw;
+	height: 100vh;
+	position: absolute;
+	display: none;
+	z-index: 10000000000000000000000000000000
+}
+#boxx2 {
+	background-color: black;
+	opacity: 0.35;
+	width: 100vw;
+	height: 100vh;
+	position: absolute;
+	display: none;
+	z-index: 10000000000000000000000000000000
+}
+#boxx4 {
+	background-color: black;
+	opacity: 0.35;
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	display: block;
+	z-index: 10000000!important;
+}
+#searching-for-deliverer {
+	background-color: white;
+	display: none;
+	position: relative;
+	z-index: 400000000000000000000000000001;
+	height: 30vh;
+	border-radius: 10px;
+	width: 80vw;
+	left: 50%;
+	top: 50%;
+	margin-top: -20vh;
+	margin-left: -40vw;
+}
+#extra-options {
+	width: 5vh;
+	position: absolute;
+	float: right;
+	top: 50%;
+	margin-top: -2.3vh;
+	right: 2vw;
+	opacity: 0.6;
+	padding: 1vw;
+}
+.in-delivery-options {
+	display: none;
+}
+.in-delivery-message-options {
+	display: none;
+}
+#cancel-search {
+	position: relative;
+	left: 50%;
+	margin-left: -35.5vw;
+	top: 10vh;
+	border-radius: 100;
+	width: 72vw;
+	text-align: center;
+	padding-top: 1.4vh;
+	background-color: none;
+	height: 40px;
+	background-color: grey;
+	border-radius: 0px;
+	opacity: 0.6;
+	color: white;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Lucida Grande";
+	font-weight: 400;
+	text-decoration: none;
+	text-shadow: none;
+	font-size: 14px;
+	border: 2px solid grey;
+	letter-spacing: -0.4px;
+}
+#searching-text {
+	font-size: 4.2vw!important;
+	padding: 10px;
+	top: 6vh;
+	text-align: center;
+}
+.modal {
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Lucida Grande";
+	width: 60%;
+	position: absolute;
+	z-index: 4000001;
+	left: 50%;
+	margin-left: -30%;
+	margin-top: -19%;
+	top: 50%;
+	text-align: center;
+	border-radius: 7px;
+	opacity: 1;
+	height: 16%;
+	background-color: white;
+	-webkit-transform: translate3d(0, 0, 0) scale(1.185);
+	transform: translate3d(0, 0, 0) scale(1.185);
+	-webkit-transition-property: -webkit-transform, opacity;
+	-moz-transition-property: -moz-transform, opacity;
+	-ms-transition-property: -ms-transform, opacity;
+	-o-transition-property: -o-transform, opacity;
+	transition-property: transform, opacity;
+	color: #000;
+	display: block;
+	font-size: 10px;
+}
+.loader {
+	height: 4px;
+	width: 80%;
+	left: 50%;
+	margin-left: -40%;
+	top: 7vh;
+	position: relative;
+	overflow: hidden;
+	background-color: #ddd;
+}
+.loader:before {
+	display: block;
+	position: absolute;
+	content: "";
+	left: -200px;
+	width: 200px;
+	height: 4px;
+	background-color: #7fb7fa;
+	animation: loading 2s linear infinite;
+}
+@keyframes loading {
+	from {
+		left: -200px;
+		width: 30%;
+	}
+	50% {
+		width: 30%;
+	}
+	70% {
+		width: 70%;
+	}
+	80% {
+		left: 50%;
+	}
+	95% {
+		left: 120%;
+	}
+	to {
+		left: 100%;
+	}
+}
+.modal-inner {
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Lucida Grande";
+	padding: 15px;
+	border-radius: 7px 7px 0 0;
+	position: relative;
+	font-weight: 100;
+}
+#dropzy-notavailable {
+	display: none;
+}
+#dropzy-overlay {
+	visibility: hidden;
+}
+.modal-button {
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Lucida Grande";
+	width: 100%;
+	padding: 0px 5px;
+	height: 44px;
+	font-size: 17px;
+	line-height: 44px;
+	text-align: center;
+	color: #007aff;
+	bottom: -4%;
+	border-top: 0.5px solid lightgrey;
+	display: block;
+	position: relative;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	cursor: pointer;
+	box-sizing: border-box;
+	-webkit-box-flex: 1;
+	-ms-flex: 1;
+	font-size: 12px;
+}
+#container {
+	width: 100%;
+	height: 100%;
+	background-color: white;
+	position: absolute;
+	bottom: 0px;
+	z-index: 3;
+	color: grey;
+	overflow: hidden;
+}
+#img-upload-icon {
+	width: 90px;
+	position: absolute;
+	left: 50%;
+	margin-left: -45px;
+	top: 4vh;
+}
+#img-upload {
+	width: 100%;
+	height: 20vh;
+	background-color: #FF6464;
+	position: absolute;
+	top: 0;
+}
+#registration-form {
+	background-color: white;
+	position: relative;
+	top: 12vh;
+	width: 80%;
+	left: 50%;
+	margin-left: -40%;
+	color: grey;
+}
+#sign-up {
+	background-color: white;
+}
+#eh {
+	position: absolute;
+	top: 10vh;
+	border: 1px solid black;
+	z-index: 1000000000000000000!important;
+}
+#hey {
+	z-index: 1000000000000000000!important;
+	position: absolute;
+}
+#review-order-title {
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Lucida Grande";
+	font-size: 1.6em;
+	left: 50%;
+	position: absolute;
+	width: 70vw;
+	top: 8vh;
+	text-align: center;
+	margin-left: -56vw;
+}
+#order-form {
+	-webkit-animation: animation 1000ms linear both;
+	animation: animation 1000ms linear both;
+	line-height: 5vh;
+	width: 84vw;
+	word-break: break-word;
+	height: 67vh;
+	overflow: hidden;
+	left: 50%;
+	margin-left: -42vw;
+	background-color: none;
+	top: 14vh;
+	z-index: 10000;
+	position: absolute;
+}
+.shadowed {
+	box-shadow: 0px 7px 5px -2px rgba(0, 0, 0, 0.07)!important;
+}
+#order-form.selectedOrderInput {
+	opacity: 1!important;
+}
+#back {
+	width: 44px;
+	height: 44px;
+	position: absolute;
+	z-index: 101;
+	background-color: grey;
+}
+#g-maps-icon {
+	position: absolute;
+	width: 9vw;
+	top: 97vw;
+	display: block;
+	left: 78vw;
+	opacity: 0.4;
+	z-index: 10000;
+}
+#open-external-map {
+	position: absolute;
+	z-index: 10000;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Lucida Grande";
+	font-weight: 200;
+	width: 14vw;
+	right: 0vw;
+    border-radius: 0px;
+	opacity: 0.8;
+	top: 82.3vw;
+	font-size: 14px;
+	color: rgba(0, 0, 0, 0.7);
+	text-shadow: none;
+	margin-left: -40vw;
+	display: none;
+	
+}
+#location-container {
+	width: 100%;
+	height: 50%;
+	position: absolute;
+	bottom: -30vw;
+	z-index: 100;
+	background-color: white;
+}
+.view-order2 {
+	opacity: 1;
+	z-index: 1000;
+	position: relative;
+	width: 18vw;
+	left: 73vw;
+	top: -5vh;
+	border-radius: 100;
+	text-decoration: none;
+	background-image: url(images/footer-bg.png);
+	background-size: cover;
+	border-radius: 100px;
+	height: 5vh;
+	padding-left: 5vw!important;
+	padding-right: 5vw!important;
+	padding-bottom: 1vh;
+	padding-top: 1.5vh;
+	color: white!important;
+	font-weight: 100!important;
+	font-size: 2.9vw;
+	text-shadow: none;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Lucida Grande"!important;
+}
+.view-order {
+	opacity: 0.7;
+	opacity: 1;
+	position: relative;
+	float: right;
+	margin-right: 2.2vw;
+	top: -1.5vh;
+	border-radius: 100;
+	text-decoration: none;
+	background-image: url(images/footer-bg.png);
+	background-size: cover;
+	border-radius: 100px;
+	padding-left: 5vw!important;
+	padding-right: 5vw!important;
+	padding-bottom: 1vh;
+	padding-top: 1vh;
+	color: white!important;
+	font-weight: 100!important;
+	font-size: 2.6vw;
+	text-shadow: none;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Lucida Grande"!important;
+}
+.order-items {
+	position: relative;
+	left: 83vw!important;
+	text-align: left;
+	top: -0.0vh!important;
+	font-size: 4.3vw!important;
+}
+#deliver-container {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 2vh;
+	padding-bottom: 30px;
+	padding-top: 70px;
+	z-index: 1;
+	padding-left: 0px!important;
+	padding-right: 0px!important;
+	display: block;
+}
+#pickup-lat {
+	position: absolute;
+	z-index: 100000;
+	top: 0;
+	left: 0;
+}
+#pickup-location-container {
+	width: 100%;
+	height: 45%;
+	position: absolute;
+	bottom: 0;
+	z-index: 3;
+	background-color: white;
+}
+#itemnamedetails {
+	position: absolute;
+	top: 15vh;
+	width: 70vw;
+	font-weight: 400;
+	opacity: 0.5;
+	font-style: italic;
+	left: 50%;
+	text-shadow: none;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Lucida Grande";
+	text-align: center;
+	padding-top: 1vh;
+	border-bottom: 1px dashed rgba(0, 0, 0, 0.3);
+	border-left: 1px dashed rgba(0, 0, 0, 0.3);
+	border-right: 1px dashed rgba(0, 0, 0, 0.3);
+	padding-bottom: 2vh;
+	margin-left: -35vw;
+	font-size: 3.5vw;
+}
+#editinfo {
+	opacity: 0.5;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Lucida Grande"!important;
+	font-weight: 300;
+	font-size: 3.4vw;
+	width: 60vw!important;
+	position: absolute;
+	z-index: 1000;
+	left: 50%;
+	margin-left: -30vw;
+	text-align: center;
+	top: 43vh;
+}
+#acceptOrder {
+	position: fixed;
+	left: 50%;
+	margin-left: -42vw;
+	top: 80vh;
+	background-color: #f7f7f7;
+	border-left: 0.5px solid (0, 0, 0, 0.06);
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 0px!important;
+	width: 43vw;
+	background-color: #f7f7f7;
+	height: 8vh!important;
+	color: rgba(0, 0, 0, 0.5);
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Lucida Grande";
+	font-weight: 300;
+	;
+	text-decoration: none;
+	text-shadow: none;
+	font-size: 3vw;
+	height: 7vh;
+	padding-top: 5vh;
+	letter-spacing: -0.4px;
+}
+#img-accept {
+	width: 10vw;
+	position: absolute;
+	left: 50%;
+	margin-left: -5vw;
+	margin-top: -4.33vh;
+	opacity: 0.5;
+}
+#img-decline {
+	width: 10vw;
+	position: absolute;
+	left: 50%;
+	margin-left: -5vw;
+	margin-top: -4.33vh;
+	opacity: 0.5;
+}
+#deny {
+	position: fixed;
+	right: 50%;
+	margin-right: -42vw;
+	top: 80vh;
+	background-color: #f7f7f7;
+	border-left: 0.5px solid (0, 0, 0, 0.06);
+	border-bottom-right-radius: 10px;
+	width: 42vw;
+	height: 8vh!important;
+	background-color: #f7f7f7;
+	height: 38px;
+	padding-top: 5vh;
+	color: rgba(0, 0, 0, 0.5);
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Lucida Grande";
+	font-weight: 300;
+	;
+	text-decoration: none;
+	text-shadow: none;
+	font-size: 3vw;
+	height: 7vh;
+	letter-spacing: -0.4px;
+}
+h3 {
+	font-weight: 100!important;
+	font-size: 100px!important;
+}
+#re-submit-order {
+	display: none;
+}
+#edit-order {
+	position: relative;
+	left: 0vw;
+	top: 77vh;
+	left: 50%;
+	z-index: 10000;
+	margin-left: -42vw;
+	width: 84vw!important;
+	border-radius: 100;
+	width: 84vw;
+	border: 1px solid grey;
+	height: 6.3vh;
+	color: grey;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Lucida Grande";
+	font-weight: 400;
+	font-size: 14px;
+	border-radius: 0;
+	background-color: #f7f7f7!important;
+	padding-bottom: 0vh;
+	padding-left: 0vw;
+	letter-spacing: -0.4px;
+	box-shadow: none;
+}
+#place-order {
+	position: relative;
+	left: 0vw;
+	top: 3vh;
+	border-radius: 100;
+	width: 84vw;
+	background-image: url(images/footer-bg.png);
+	background-size: cover;
+	height: 6.3vh;
+	color: white;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Lucida Grande";
+	font-weight: 400;
+	font-size: 14px;
+	border-radius: 0;
+	border: none;
+	padding-bottom: 0vh;
+	padding-left: 0vw;
+	letter-spacing: -0.4px;
+}
+#place-order:active {
+	background-image: none;
+	border: 2px solid #8690f5;
+	color: #8690f5;
+}
+#place-order:active {
+	background-image: none!important;
+	color: #a399fd;
+	font-weight: 500;
+	border: 3px solid #a399fd;
+}
+#finished {
+	position: absolute;
+	left: 0;
+	display: block!important;
+	top: 82.5vh;
+	text-shadow: none;
+	left: 50%;
+	padding-top: 1.4vh;
+	margin-left: -41vw;
+	border-radius: 0px!important;
+	width: 84vw;
+	background-image: url(images/footer-bg.png);
+	height: 38px;
+	color: white;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Lucida Grande";
+	z-index: 1000000;
+	font-weight: 100;
+	font-size: 4vw;
+	height: 6vh!important;
+	border: none;
+	height: 6.5vh;
+	letter-spacing: -0.4px;
+}
+#usericon2 {
+	width: 5.5vw;
+	filter: invert(1);
+	position: absolute;
+	z-index: 100000000;
+	top: 16.5vh;
+	left: 4vw;
+}
+#usericon3 {
+	width: 5.5vw;
+	filter: invert(1);
+	position: absolute;
+	z-index: 10000000000000;
+	top: 24.5vh;
+	left: 4vw;
+}
+#iconcall2 {
+	width: 5.0vw;
+	filter: invert(1);
+	position: absolute;
+	z-index: 10000000000000;
+	top: 32.5vh;
+	left: 4.3vw;
+}
+#iconpassword2 {
+	width: 5.2vw;
+	filter: invert(1);
+	position: absolute;
+	z-index: 10000000000000;
+	top: 40.5vh;
+	left: 4.3vw;
+	display: none;
+}
+#iconpassword3 {
+	width: 5.2vw;
+	filter: invert(1);
+	position: absolute;
+	z-index: 10000000000000;
+	top: 48.5vh;
+	left: 4.3vw;
+	display: none;
+}
+#details-fname {
+	border-top: 1px solid rgba(0, 0, 0, 0.3)!important;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.3)!important;
+}
+#details-password {
+	display: none;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.3)!important;
+}
+#details-password-confirm {
+	display: none;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.3)!important;
+}
+#details-lname {
+	border-bottom: 1px solid rgba(0, 0, 0, 0.3)!important;
+}
+#white-box8 {
+	width: 12vw;
+	height: 17vh;
+	background-color: white;
+	z-index: 100000000000000000;
+	position: absolute;
+	top: 20vh;
+}
+#details-phone {
+	border-bottom: 1px solid rgba(0, 0, 0, 0.3)!important;
+}
+#local-storage-email {
+	opacity: 0;
+}
+#details-container {
+	width: 70vw;
+	position: relative;
+	left: 50%;
+	top: 4vh;
+	margin-left: -35vw;
+	height: 37vh;
+	padding-bottom: 0vh;
+	border: 1px dashed rgba(0, 0, 0, 0.2);
+	border-radius: 5px;
+}
+#order-user-pic {
+	width: 20vw;
+	height: 20vw;
+	object-fit: cover;
+	position: absolute;
+	left: 50%;
+	top: 47vh;
+	margin-left: -10vw;
+	border-radius: 100px;
+}
+#submit {
+	height: 20px;
+	width: 75vw;
+	bottom: 0;
+	position: absolute;
+	background-color: #fa6561;
+	color: grey;
+	left: 50%;
+	margin-left: -43vw;
+	font-weight: 100;
+	border-radius: 0;
+	color: white;
+}
+#current-location {
+	background-color: black;
+	opacity: 0.5;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	color: white;
+	font-weight: 100;
+	width: 41vw;
+	height: 40px;
+	left: 50%;
+	margin-left: -41.3vw;
+	top: 50%;
+	margin-top: 22vh;
+	position: absolute;
+	font-size: 3vw;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Lucida Grande";
+	border-radius: 0px;
+	border: 5px solid black;
+}
+#pac-input {
+	font-family: 'Lato', sans-serif;
+	font-size: 16px;
+	font-weight: 300;
+	margin-left: 40px;
+	margin-top: 0px;
+	z-index: 10000000;
+	padding: 0 11px 0 13px;
+	text-overflow: ellipsis;
+	width: 70%;
+	position: absolute;
+	left: 100px;
+	height: 40px;
+	background-color: #F8F8F8;
+	border-radius: 5px;
+}
+#other-location {
+	background-color: none;
+	border: 2px solid black;
+	opacity: 0.4;
+	border-radius: 0px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	color: black;
+	font-weight: 500;
+	width: 41vw;
+	height: 40px;
+	left: 50%;
+	margin-left: 0vw;
+	top: 50%;
+	margin-top: 22vh;
+	position: absolute;
+	background-color: white;
+	font-size: 3vw;
+}
+#footer {
+	z-index: 5;
+	position: absolute;
+	bottom: -4px;
+}
+#footer2 {
+	position: relative;
+	z-index: 5;
+}
+/* Clear floats after the columns */
+
+.footer-btn {
+	height: 55px;
+	width: 35.3vw;
+	padding: none;
+	background-color: #fa6561;
+	border-bottom: 2px solid #fa6561;
+}
+#order {
+	overflow: none;
+}
+#image-order {
+	position: relative;
+	width: 22px;
+	left: 50%;
+	top: 2px;
+	margin-left: -15px;
+}
+#home-bg {
+	opacity: 0.7;
+	height: 105vh;
+	position: absolute;
+	left: -8vw;
+	top: -3vh;
+}
+#order-tag {
+	position: relative;
+	text-decoration: none;
+	color: #648EF8;
+	width: 20px;
+	left: 50%;
+	font-size: 11px!important;
+	margin-left: -19px;
+	top: 3px;
+	font-size: 9px;
+}
+#deliver-tag {
+	position: relative;
+	text-shadow: none;
+	text-decoration: none;
+	color: rgba(0, 0, 0, 0.5);
+	width: 20px;
+	left: 50%;
+	font-size: 11px!important;
+	top: 2px;
+	font-size: 9px;
+	margin-left: -19px;
+}
+#account-tag {
+	position: relative;
+	text-decoration: none;
+	color: rgba(0, 0, 0, 0.5);
+	width: 20px;
+	left: 50%;
+	top: 0px;
+	top: 3px;
+	font-size: 10.5px!important;
+	margin-left: -23px;
+	text-shadow: none;
+	text-decoration: none;
+}
+#image-deliver {
+	position: relative;
+	width: 25px;
+	height: 22px;
+	left: 50%;
+	top: 3px;
+	margin-left: -12px;
+}
+#image-settings {
+	position: relative;
+	opacity: 0.3;
+	width: 22px;
+	left: 50%;
+	top: 5px;
+	margin-left: -14px;
+}
+p {
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Lucida Grande";
+	font-size: 10px;
+	font-weight: 100;
+	position: relative;
+	top: 15px;
+}
+#order-page-link {
+	left: 0%;
+	bottom: -52px;
+	position: relative;
+	background-color: white;
+	border: none;
+	;
+}
+#deliver-page-link {
+	left: -2%;
+	position: relative;
+	border: none;
+	bottom: -52px;
+}
+#settings-page-link {
+	left: 69%;
+	border: none;
+	bottom: 3px;
+	position: relative;
+}
+#submit2 {
+	height: 50px;
+	position: absolute;
+	background-color: #fa6561;
+	color: grey width: 78%;
+	bottom: 67px;
+	left: 30px;
+	font-weight: 100;
+}
+#line {
+	display: none;
+	z-index: 10000000000;
+	position: absolute;
+	width: 50%;
+	height: 40px;
+	left: 0;
+	top: 50%;
+	margin-top: 14vh;
+	border-right: 2px solid black;
+	opacity: 0.2;
+}
+#deliveryAddressNext {
+	height: 6.3vh;
+	color: white;
+	position: absolute;
+	box-shadow: none;
+	background-image: url(images/footer-bg.png);
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Lucida Grande";
+	display: block;
+	border-radius: 0px;
+	border: none;
+	width: 82vw;
+	top: 47%;
+	margin-top: 30vh;
+	left: 50%;
+	font-weight: 100;
+	font-size: 4.1vw;
+	margin-left: -41vw;
+	z-index: 1000000000;
+	text-shadow: none;
+	opacity: 0.4;
+	text-decoration: none;
+}
+#deliveryAddressNext:active {
+	background-image: none;
+	border: 2px solid #8690f5;
+	color: #8690f5;
+}
+#itemDetailsNext {
+	opacity: 0.4;
+	height: 6.3vh;
+	color: white;
+	position: absolute;
+	box-shadow: none;
+	background-image: url(images/footer-bg.png);
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Lucida Grande";
+	display: block;
+	border-radius: 0px;
+	border: none;
+	width: 82vw;
+	top: 47%;
+	margin-top: 30vh;
+	left: 50%;
+	font-weight: 100;
+	font-size: 4.1vw;
+	margin-left: -41vw;
+	z-index: 1000000000;
+	text-shadow: none;
+	text-decoration: none;
+}
+#itemDetailsNext:active {
+	background-image: none;
+	border: 2px solid #8690f5;
+	color: #8690f5;
+}
+#submit6 {
+	opacity: 0.4;
+	height: 6.3vh;
+	color: white;
+	position: absolute;
+	box-shadow: none;
+	background-image: url(images/footer-bg.png);
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Lucida Grande";
+	display: block;
+	border-radius: 0px;
+	border: none;
+	width: 82vw;
+	top: 47%;
+	margin-top: 30vh;
+	left: 50%;
+	font-weight: 100;
+	font-size: 4.1vw;
+	margin-left: -41vw;
+	z-index: 1000000000;
+	text-shadow: none;
+	text-decoration: none;
+}
+#submit6:active {
+	background-image: none;
+	border: 2px solid #8690f5;
+	color: #8690f5;
+}
+#icon-location {
+	width: 12vw;
+	left: 50%;
+	margin-left: -5.25vw;
+	z-index: 5000;
+	top: 10vh;
+	position: fixed;
+	padding: 2.5vw;
+	border-radius: 100px;
+	border: 1px solid rgba(0, 0, 0, 0.5);
+}
+#icon-shop {
+	width: 12vw;
+	left: 50%;
+	margin-left: -5.25vw;
+	z-index: 5000;
+	top: 10vh;
+	position: fixed;
+}
+#submit4 {
+	height: 40px;
+	color: white;
+	position: absolute;
+	box-shadow: none;
+	text-shadow: none;
+	text-decoration: none;
+	background-image: url(images/footer-bg.png);
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Lucida Grande";
+	border-radius: 100px;
+	border: none;
+	width: 82vw;
+	top: 50%;
+	margin-top: 30vh;
+	left: 50%;
+	font-weight: 100;
+	font-size: 14px;
+	margin-left: -41vw;
+	z-index: 1000000000;
+}
+#home {
+	overflow: hidden;
+	z-index: 100000;
+	height: 100vh;
+	width: 100vw;
+}
+#deliver-page {
+	overflow: hidden;
+	z-index: 10000;
+	height: 100vh;
+	width: 100vw;
+	background-color: #f7f7f7;
+}
+.stores {
+	width: 100%;
+	height: 20%;
+	padding-bottom: 20px;
+	border-bottom: 0.3px solid lightgrey;
+}
+#shopbox {
+	top: 50px;
+	z-index: 1000000;
+	position: absolute;
+	display: none;
+	width: 400px;
+	height: 200px;
+	background-color: white;
+	border: 2px solid red;
+}
+#dropoff-lat, #dropoff-long {
+	display: none;
+}
+#dropoff-location {
+	background: url(images/pin.svg) no-repeat scroll 4.5vw 6.1vw;
+	background-size: 4.6vw;
+	height: 14vh!important;
+	width: 84vw!important;
+	padding-right: 15vw!important;
+	padding-top: 3vh;
+	font-size: 4.2vw!important;
+	border-top: 1px solid black;
+}
+#shopbox2 {
+	top: 0px;
+	z-index: 1000000;
+	position: absolute;
+	left: 0;
+	width: 91.4%;
+	height: 38%;
+	background-color: white;
+	padding-top: 70px;
+	border-bottom: 1px solid grey;
+}
+#invis {
+	color: red;
+}
+.store-photos {
+	left: 5%;
+	position: relative;
+	top: -60px;
+	height: 50px;
+	width: 80px
+}
+.store-info {
+	position: relative;
+	left: 40%;
+	width: 40%;
+	font-size: 13px;
+}
+.back-btn {
+	width: 10vw;
+	top: 5vh;
+	opacity: 0.7;
+	left: 4vw;
+	padding: 2vw;
+	position: fixed;
+	z-index: 10000;
+}
+#specify-address {
+	position: fixed;
+	left: 50%;
+	margin-left: -42vw;
+	top: 61vh;
+	border-radius: 100;
+	width: 84vw;
+	height: 6.3vh;
+	padding-top: 1.7vh;
+	height: 6.8vh;
+	color: white;
+	text-shadow: none;
+	background-image: url(images/footer-bg.png);
+	background-size: cover;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Lucida Grande";
+	font-weight: 200;
+	font-size: 4.2vw;
+	border-radius: 0;
+	border: 0px solid rgba(0, 0, 0, 0.8);
+	padding-bottom: 2vh;
+	text-align: center;
+	border-radius: 3px;
+	letter-spacing: -0.4px;
+}
+#specify-address:active {
+	background-image: none;
+	border: 2px solid #8690f5;
+	color: #8690f5;
+}
+#iwant {
+	position: fixed;
+	top: 43vh;
+	font-size: 3.5vw;
+	left: 50%;
+	margin-left: -40vw;
+	width: 80vw;
+	text-align: center;
+	opacity: 0.3;
+	font-weight: 300;
+	letter-spacing: -0.5px;
+}
+#iwant2 {
+	position: absolute;
+	top: 72vh;
+	font-size: 1.2em;
+	left: 9vw;
+	opacity: 0.8;
+	letter-spacing: -0.5px;
+}
+#location-input {
+	width: 83vw;
+	left: 50%;
+	margin-left: -41.5vw;
+	top: 3vh;
+	padding-left: 12vw!important;
+	margin-top: 17vh;
+	position: absolute;
+	border-top: 0px solid #F0F0F0!important;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.7)!important;
+	background-color: #F8F8F8;
+	z-index: 400000;
+	font-size: 4.5vw!important;
+	background: url(images/current.png) no-repeat scroll 3.7vw 3.9vw;
+	background-size: 3.8vw;
+}
+#location-input::placeholder {}
+#location-input:focus {
+	background: url(images/1x/bluelocation.png) no-repeat scroll 3.7vw 4.5vw;
+	background-size: 3.8vw;
+}
+#extra-info {
+	width: 8vw;
+	position: absolute;
+	left: 50%;
+	margin-left: -4vw;
+	top: 59vh;
+	opacity: 0.05;
+}
+#itemdetails-area {
+	border-radius: 0px;
+	background-color: white!important;
+	font-size: 4vw!important;
+	width: 83vw;
+	top: 44vh;
+	left: 50%;
+	margin-left: -41.5vw;
+	position: absolute;
+	padding-top: 2vh!important;
+	padding-bottom: 3vh!important;
+	padding-left: 5vw!important;
+	padding-right: 5vw!important;
+	border-top: 1px solid rgba(0, 0, 0, 0.1)!important;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1)!important;
+	border-left: 1px solid rgba(0, 0, 0, 0.1)!important;
+	border-right: 1px solid rgba(0, 0, 0, 0.1)!important;
+	left: 50%;
+	opacity: 1;
+	letter-spacing: -0.1vw;
+	color: rgba(0, 0, 0, 0.3);
+	margin-left: -41.5vw;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Lucida Grande"!important;
+	font-weight: 100;
+}
+#whitebox2 {
+	background-color: white;
+	width: 100vw;
+	height: 40vh;
+	position: fixed;
+	-webkit-box-shadow: -1px 0px 43px 6px rgba(0, 0, 0, 0.11);
+	-moz-box-shadow: -1px 0px 43px 6px rgba(0, 0, 0, 0.11);
+	box-shadow: -1px 0px 43px 6px rgba(0, 0, 0, 0.11);
+}
+.iteminputs {
+	top: 14.8vh;
+	border-radius: 0px!important;
+	position: relative;
+	border: 1px solid #FFFFFF;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+	z-index: 400000;
+	box-shadow: none!important;
+	font-size: 4.2vw!important;
+	display: block;
+	padding-left: 15vw!important;
+	padding-bottom: 2vh;
+	font-weight: 300;
+}
+.iteminputs::placeholder {
+	color: rgba(0, 0, 0, 0.6);
+}
+#whitebox3 {
+	background-color: white;
+	width: 100vw;
+	height: 40vh;
+	top: 0vw;
+	position: fixed;
+	-webkit-box-shadow: -1px 0px 43px 6px rgba(0, 0, 0, 0.11);
+	-moz-box-shadow: -1px 0px 43px 6px rgba(0, 0, 0, 0.11);
+	box-shadow: -1px 0px 43px 6px rgba(0, 0, 0, 0.11);
+}
+#itemdetails {
+	display: block;
+	font-weight: 400!important;
+	opacity: 0.3!important;
+	height: 9vh!important;
+	color: rgba(0, 0, 0, 0.8)!important;
+	border-radius: 10px!important;
+	background-color: rgba(255, 255, 255, 1)!important;
+	border-top: 0px dashed rgba(255, 255, 255, 1)!important;
+	border-bottom: 0px dashed rgba(255, 255, 255, 1)!important;
+	border-left: 0px dashed rgba(255, 255, 255, 1)!important;
+	border-right: 0px dashed rgba(255, 255, 255, 1)!important;
+	width: 84vw;
+}
+#itemdetails::placeholder {
+	color: rgba(0, 0, 0, 0.3)!important;
+}
+.pac-item {
+	padding: 17px;
+}
+.pac-container {
+	padding: 2vw;
+	height: 30%;
+	overflow: scroll;
+	z-index: 100000000000000000;
+}
+#container3 {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+.pac-container:after {
+	/* Disclaimer: not needed to show 'powered by Google' if also a Google Map is shown */
+	background-image: none !important;
+	height: 0px;
+}
+#manual-input {
+	position: absolute;
+	z-index: 2;
+	bottom: 60px;
+}
+.reg-form {
+	margin-bottom: 3vh;
+	height: 6.9vh!important;
+	border: 0px solid rgba(255, 255, 255, 0.7);
+	background-color: rgba(0, 0, 0, 0.35)!important;
+	padding-left: 17vw!important;
+	position: relative;
+	color: white!important;
+	font-size: 3.7vw!important;
+}
+.reg-form:focus {
+	background-color: rgba(0, 0, 0, 0.44)!important;
+	border: 1px solid rgba(255, 255, 255, 0.7);
+}
+#dob-text {
+	display: none;
+	font-size: 3.7vw!important;
+	color: rgba(255, 255, 255, 0.8);
+	font-weight: 100;
+	text-shadow: none;
+	position: fixed;
+	z-index: 100000;
+	left: 50%;
+	margin-left: -26.3vw;
+	top: 50%;
+	margin-top: -3.77vh;
+}
+#phone-reg {
+	width: 85vw;
+	background-color: rgba(0, 0, 0, 0.25);
+	border-radius: 5px;
+	background: url(images/call.png) no-repeat scroll 4.6vw 3.4vw;
+	background-size: 4.3vw;
+}
+.reg-form:focus::-webkit-input-placeholder {
+	color: rgba(255, 255, 255, 0.2);
+}
+#email:focus::-webkit-input-placeholder {
+	color: rgba(255, 255, 255, 0.2);
+}
+#password:focus::-webkit-input-placeholder {
+	color: rgba(255, 255, 255, 0.2);
+}
+.reg-form::placeholder {
+	color: rgba(255, 255, 255, 0.8);
+	text-transform: none;
+}
+.inputs::placeholder {
+	color: rgba(0, 0, 0, 0.5);
+	font-weight: 300;
+	font-size: 1em!important;
+}
+#register-back {
+	position: absolute;
+	top: 0vh;
+	display: none;
+}
+.inputs {
+	position: relative;
+	height: 6.9vh!important;
+	background-color: rgba(0, 0, 0, 0.00)!important;
+	border-radius: 0px!important;
+	padding-left: 15vw!important;
+	font-weight: 300;
+	color: rgba(0, 0, 0, 1)!important;
+	box-shadow: none!important!important;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.0)!important;
+	border-left: 0.5px solid rgba(0, 0, 0, 0.0)!important;
+	border-top: 1px dashed rgba(0, 0, 0, 0.2);
+	border-right: 0.5px solid rgba(0, 0, 0, 0.0)!important;
+	font-size: 1em!important;
+}
+#itemname {
+	position: fixed;
+	width: 70vw;
+	top: 16.5vh;
+	left: 50%;
+	margin-left: -35vw;
+	padding-right: 70px;
+	padding-left: 6vw;
+	border-top: 1px dashed rgba(0, 0, 0, 0.2)!important;
+	border-left: 1px dashed rgba(0, 0, 0, 0.2)!important;
+	border-right: 1px dashed rgba(0, 0, 0, 0.2)!important;
+	border-radius: 5px;
+	text-align: left;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Lucida Grande";
+	font-size: 4.2vw;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	font-weight: 300;
+}
+#order-route {
+	overflow: hidden;
+	z-index: 10000;
+	height: 100vh;
+	width: 100vw;
+}
+#register-form {
+	position: absolute;
+	top: -10vh;
+	width: 85vw;
+	left: 50%;
+	margin-left: -42.5vw;
+	display: none;
+}
+#registerButton {
+	position: absolute;
+	width: 84vw;
+	opacity: 0.7;
+	height: 6vh;
+	border-radius: 0px;
+	font-weight: 200;
+	color: #8c8ce4;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Lucida Grande";
+	font-size: 3.6vw;
+	padding-left: 3vw;
+	padding-top: 1.7vh;
+	padding-bottom: 1vh;
+	border: none;
+	font-weight: 500;
+	text-shadow: none;
+	background: url(images/right-arrow.svg) no-repeat scroll 75.5vw 2.8vw #ffffff;
+	background-size: 4.5vw;
+	font-weight: 400;
+	height: 6vh;
+	color: #8c8ce4;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Lucida Grande"!important;
+}
+a {
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Lucida Grande";
+}
+#existing-account {
+	color: white;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Lucida Grande";
+	font-weight: 100;
+	text-shadow: none;
+	font-size: 13px;
+	text-align: center;
+	width: 80vw;
+	position: absolute;
+	left: 50%;
+	margin-left: -40vw;
+	bottom: 6vh;
+	padding: 2.5vh;
+}
+#login-account {
+	color: white;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Lucida Grande";
+	font-weight: 100;
+	text-shadow: none;
+	font-size: 13px;
+	text-align: center;
+	width: 80vw;
+	display: none;
+	position: absolute;
+	left: 50%;
+	margin-left: -40vw;
+	bottom: 6vh;
+	padding: 2.5vh;
+}
+#loginButton {
+	position: absolute;
+	bottom: -14vh;
+	width: 84vw;
+	opacity: 0.7;
+	height: 6vh;
+	border-radius: 0px;
+	font-weight: 200;
+	color: #8c8ce4;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Lucida Grande";
+	font-size: 3.6vw;
+	padding-left: 3vw;
+	padding-top: 1.7vh;
+	padding-bottom: 1vh;
+	border: none;
+	font-weight: 500;
+	text-shadow: none;
+	background: url(images/right-arrow.svg) no-repeat scroll 75.5vw 2.8vw #ffffff;
+	background-size: 4.5vw;
+}
+#tofrommap {
+	width: 3.4vw;
+	position: relative;
+	top: 8.2vh;
+	left: 3vw;
+}
+#loginButton:active {
+	background-color: rgba(0, 0, 0, 0.1)!important;
+	border: 3px solid white;
+	color: white;
+}
+.to-from {
+	width: 1.4vh;
+	float: left;
+	margin-top: -2.4vh;
+	margin-left: 30vw;
+}
+#itemname-area {
+	top: 23vh;
+	background: url(images/form-itemname.svg) no-repeat scroll 4.5vw 1.1vw;
+	background-size: 4.5vw;
+	color: black;
+	font-weight: 500;
+}
+#itemname-area:focus {
+	top: 23vh;
+	background: url(images/icons3-02.png) no-repeat scroll 4.5vw 1.1vw;
+	background-size: 4.5vw;
+}
+.itemname-pull {
+	margin-top: -65px;
+	font-size: 14px;
+	float: left;
+	margin-left: 11vw;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Lucida Grande";
+	font-weight: 300;
+	color: black;
+	opacity: 0.8;
+}
+#ico-itemname {
+	position: relative;
+	opacity: 0.5;
+	height: 2.3vh;
+	font-size: 17px;
+	font-weight: 400;
+	top: -44.8vh;
+	padding-left: 5vw;
+}
+#ico-dropoff {
+	position: relative;
+	height: 2.3vh;
+	opacity: 0.5;
+	font-size: 17px;
+	font-weight: 400;
+	left: -15.4vw;
+	top: -17.6vh;
+}
+#ico-pickup {
+	position: relative;
+	width: 4.5vw;
+	opacity: 0.5;
+	font-size: 17px;
+	font-weight: 400;
+	left: -10.2vw;
+	top: -26.6vh;
+}
+#ico-price {
+	position: relative;
+	height: 2.3vh;
+	opacity: 0.5;
+	font-size: 17px;
+	font-weight: 400;
+	left: -4.5vw;
+	top: -35.5vh;
+}
+a:link {
+	text-decoration: none!important;
+}
+.order-locations2 {
+	font-size: 3.8vw!important;
+	width: 70vw!important;
+	text-decoration: none!important!important;
+	color: black;
+	top: 6vh;
+	font-weight: 500;
+	opacity: 0.5!important;
+}
+.map-item {
+	height: 50vh;
+	top: -6vh;
+	position: relative;
+	width: 100vw!important;
+}
+.mappickup {
+	font-size: 3.8vw!important;
+	width: 80vw!important;
+	text-decoration: line-through!important;
+	left: 9vw;
+	top: -0.5vh;
+	opacity: 0.5;
+	font-weight: 100;
+	color: black;
+	width: 70vw!important;
+	text-decoration: none!important;
+}
+.map-itemname {
+	font-size: 4vw!important;
+	color: black;
+	top: -8.2vh;
+	left: 9vw;
+	font-weight: 400;
+	font-size: 4.5vw!important;
+}
+.order-price2 {
+	font-size: 4.5vw!important;
+	color: grey;
+	font-weight: 400!important;
+	right: 09vw!important;
+	top: -3vh!important;
+}
+.item {
+	margin-bottom: -3.9vh!important;
+}
+.item:active {
+	background-color: #7fb7fa!important;
+}
+.itemname-pull {
+	font-size: 4.2vw;
+	top: 1vh;
+	font-weight: 400;
+}
+.order-locations {
+	top: 2vh!important;
+	font-size: 3.6vw!important;
+	opacity: 0.7!important;
+	font-weight: 400!important;
+}
+#login {
+	height: 100%;
+	overflow: hidden;
+	position: fixed;
+	height: 100%;
+	background-size: 100vh;
+	background-image: url('images/homebg-2.png');
+	margin: 0 auto;
+	width: 100%;
+}
+.order-locations {
+	left: 11vw!important;
+}
+.line4 {
+	width: 30px;
+	height: 13vh;
+	position: relative;
+	border-right: 1px dashed black;
+	float: left;
+	margin-top: -17.5vh;
+	margin-left: 60vw;
+	opacity: 0.4;
+}
+.lines {
+	width: 30px;
+	height: 13vh;
+	position: relative;
+	border-right: 1px dashed black;
+	float: left;
+	margin-top: -9vh;
+	margin-left: 63vw;
+	opacity: 0.4;
+}
+.lines2 {
+	width: 30px;
+	height: 16vh;
+	margin-bottom: -10%;
+	border-right: 6px solid lightgreen;
+	float: left;
+	margin-top: -20.5%;
+	margin-left: -40.5vw;
+	opacity: 1;
+}
+#whatyouneed {
+	height: 6.9vh;
+	width: 84vw;
+	position: fixed;
+	left: 50%;
+	z-index: 100000000000000000000;
+	background: url(images/searchicon.png) no-repeat scroll 4vw 3.5vw;
+	background-size: 5vw;
+	font-size: 4.5vw;
+	top: 50vh;
+	text-align: center;
+	background-color: rgba(0, 0, 0, 0.01);
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Lucida Grande"!important;
+	border: none;
+	border-bottom: 0.5px solid rgba(0, 0, 0, 0.3)!important;
+	border-top: 0.0px solid rgba(0, 0, 0, 0.1)!important;
+	border-left: 0.0px solid rgba(0, 0, 0, 0.1)!important;
+	border-right: 0.0px solid rgba(0, 0, 0, 0.1)!important;
+	margin-left: -42vw;
+     
+}
+
+#ajax-loader {
+    position: absolute;
+    left: 50%;
+    width: 70vw;
+    margin-left:-35vw;
+    z-index: 10000;
+    top: 5vh;
+   background-color: white;
+    opacity: 0.7;
+    display: none;
+}
+
+#whatyouneed:focus {
+
+ -webkit-box-shadow: 3px 13px 40px -8px rgba(0,0,0,0.18);
+-moz-box-shadow: 3px 13px 40px -8px rgba(0,0,0,0.18);
+box-shadow: 3px 13px 40px -8px rgba(0,0,0,0.18);
+    
+    }
+.yourclass::-webkit-input-placeholder {
+	color: #b2cde0
+}
+#whatyouneed::placeholder {
+	font-weight: 100!important;
+	text-align: center;
+	color: black;
+}
+#home-logo {
+	width: 20vw;
+	left: 50%;
+	margin-left: -10vw;
+	position: absolute;
+	top: 27vh;
+}
+.img-logo {
+	width: 20vw;
+	display: block;
+	overflow: scroll;
+	left: 50%;
+	margin-left: -10vw;
+	opacity: 0.9;
+	top: 10vh;
+	z-index: 10000;
+	position: absolute;
+	display: none;
+}
+#location-link {
+	position: relative;
+	font-size: 27px!important;
+	height: 9vh!important;
+	padding-top: 2vh;
+	padding-right: 4.5vw!important;
+	display: none;
+	font-size: 17px;
+	font-weight: 400;
+	padding-bottom: 3vh;
+	top: -8.5vh;
+	padding-left: 74vw;
+}
+#pickup-location-link {
+	position: relative;
+	font-size: 22px!important;
+	height: 7vh!important;
+	padding-top: 2vh;
+	padding-right: 3.5vw;
+	font-size: 17px;
+	font-weight: 400;
+	padding-bottom: 3vh;
+	top: -26vh;
+	padding-left: 76vw;
+}
+#location-back {
+	position: absolute;
+	z-index: 100002;
+	top: 0;
+	right: 0;
+	cursor: pointer;
+	padding: 10px;
+	display: none;
+}
+#pickup-location-back {
+	position: absolute;
+	z-index: 100002;
+	top: 0;
+	right: 0px;
+	cursor: pointer;
+	padding: 10px;
+}
+#location-back2 {
+	position: absolute;
+	z-index: 10000000;
+	top: 0;
+	left: 0;
+	cursor: pointer;
+	padding-left: 0px;
+}
+#inputfield {
+	position: absolute;
+	bottom: 0;
+	z-index: 1000;
+}
+#info {
+	bottom: 0;
+	position: absolute;
+	z-index: 10000;
+}
+html, body {
+	height: 100%;
+	width: 100%;
+	overflow: hidden !important;
+	margin: 0;
+	position: fixed;
+	border-width: 0px;
+	padding: 0px;
+}
+.blur {
+	filter: blur(5px);
+	-moz-filter: blur(5px);
+	-webkit-filter: blur(5px);
+	-o-filter: blur(5px);
+}
+.blur2 {
+	filter: blur(7px);
+	-moz-filter: blur(7px);
+	-webkit-filter: blur(7px);
+	-o-filter: blur(7px);
+}
+.blur3 {
+	filter: blur(1px);
+	-moz-filter: blur(1px);
+	-webkit-filter: blur(1px);
+	-o-filter: blur(1px);
+}
+#logo-container {
+	width: 100%;
+	height: 30%;
+	top: 0;
+	z-index: 2;
+	position: absolute;
+	width: 100%;
+	height: 30%;
+	top: 0;
+	z-index: 2;
+	position: absolute;
+}
+*, *:before, *:after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	/*transition*/
+	-webkit-transition: .25s ease-in-out;
+	-moz-transition: .25s ease-in-out;
+	-o-transition: .25s ease-in-out;
+	transition: .25s ease-in-out;
+	outline: none;
+	font-family: Helvetica Neue, helvetica, arial, verdana, sans-serif;
+}
+body {
+	background: white;
+}
+h1 {
+	margin: 75px auto 0 auto;
+	text-align: center;
+	font-weight: 200;
+	color: #4b4b4b;
+}
+#toggles {
+	width: 60px;
+	margin: 20px auto;
+	text-align: center;
+}
+.ios-toggle, .ios-toggle:active {
+	position: absolute;
+	top: -5000px;
+	height: 0;
+	width: 0;
+	opacity: 0;
+	border: none;
+	outline: none;
+}
+.checkbox-label {
+	display: block;
+	position: relative;
+	padding: 10px;
+	margin-bottom: 40px;
+	font-size: 12px;
+	line-height: 16px;
+	width: 100%;
+	height: 29px;
+	/*border-radius*/
+	-webkit-border-radius: 18px;
+	-moz-border-radius: 18px;
+	border-radius: 18px;
+	background: #f8f8f8;
+	cursor: pointer;
+}
+.checkbox-label:before {
+	content: '';
+	display: block;
+	position: absolute;
+	z-index: 1;
+	line-height: 34px;
+	text-indent: 40px;
+	height: 29px;
+	width: 29px;
+	/*border-radius*/
+	-webkit-border-radius: 100%;
+	-moz-border-radius: 100%;
+	border-radius: 100%;
+	top: 0px;
+	left: 0px;
+	right: auto;
+	background: white;
+	/*box-shadow*/
+	-webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, .2), 0 0 0 2px #dddddd;
+	-moz-box-shadow: 0 3px 3px rgba(0, 0, 0, .2), 0 0 0 2px #dddddd;
+	box-shadow: 0 3px 3px rgba(0, 0, 0, .2), 0 0 0 2px #dddddd;
+}
+.checkbox-label:after {
+	content: attr(data-off);
+	display: block;
+	position: absolute;
+	z-index: 0;
+	top: 0;
+	left: -300px;
+	padding: 10px;
+	height: 100%;
+	width: 300px;
+	text-align: right;
+	color: #bfbfbf;
+	white-space: nowrap;
+}
+.ios-toggle:checked+.checkbox-label {
+	/*box-shadow*/
+	-webkit-box-shadow: inset 0 0 0 20px rgba(19, 191, 17, 1), 0 0 0 2px rgba(19, 191, 17, 1);
+	-moz-box-shadow: inset 0 0 0 20px rgba(19, 191, 17, 1), 0 0 0 2px rgba(19, 191, 17, 1);
+	box-shadow: inset 0 0 0 20px rgba(19, 191, 17, 1), 0 0 0 2px rgba(19, 191, 17, 1);
+}
+.ios-toggle:checked+.checkbox-label:before {
+	left: calc(100% - 29px);
+	/*box-shadow*/
+	-webkit-box-shadow: 0 0 0 2px transparent, 0 3px 3px rgba(0, 0, 0, .3);
+	-moz-box-shadow: 0 0 0 2px transparent, 0 3px 3px rgba(0, 0, 0, .3);
+	box-shadow: 0 0 0 2px transparent, 0 3px 3px rgba(0, 0, 0, .3);
+}
+.ios-toggle:checked+.checkbox-label:after {
+	content: attr(data-on);
+	left: 60px;
+	width: 29px;
+}
+/* GREEN CHECKBOX */
+
+#checkbox1+.checkbox-label {
+	/*box-shadow*/
+	-webkit-box-shadow: inset 0 0 0 0px rgba(19, 191, 17, 1), 0 0 0 2px #dddddd;
+	-moz-box-shadow: inset 0 0 0 0px rgba(19, 191, 17, 1), 0 0 0 2px #dddddd;
+	box-shadow: inset 0 0 0 0px rgba(19, 191, 17, 1), 0 0 0 2px #dddddd;
+	position: relative;
+	top: 10vw;
+	z-index: 1000000000000000000;
+}
+#checkbox1:checked+.checkbox-label {
+	/*box-shadow*/
+	-webkit-box-shadow: inset 0 0 0 18px rgba(19, 191, 17, 1), 0 0 0 2px rgba(19, 191, 17, 1);
+	-moz-box-shadow: inset 0 0 0 18px rgba(19, 191, 17, 1), 0 0 0 2px rgba(19, 191, 17, 1);
+	box-shadow: inset 0 0 0 18px rgba(19, 191, 17, 1), 0 0 0 2px rgba(19, 191, 17, 1);
+}
+#checkbox1:checked+.checkbox-label:after {
+	color: rgba(19, 191, 17, 1);
+}
+/* RED CHECKBOX */
+
+.footer-navbar {
+	position: absolute;
+	float: left;
+	left: 0.00%;
+	z-index: 10000000;
+	width: 100.00%;
+	-webkit-box-shadow: -1px 0px 43px 6px rgba(0, 0, 0, 0.02);
+	-moz-box-shadow: -1px 0px 43px 6px rgba(0, 0, 0, 0.02);
+	box-shadow: -1px 0px 43px 6px rgba(0, 0, 0, 0.03);
+	bottom: -16px;
+	border-top: 0.5px solid rgba(0, 0, 0, 0.2);
+	text-decoration: none;
+	background-color: white;
+	height: 63px;
+}
+@media screen and (device-aspect-ratio: 40/71) {
+	.footer-navbar {
+		height: 53px;
+	}
+	.inputs {
+		font-size: 4.2vw!important;
+		padding-left: 16vw!important;
+	}
+	#location-link {
+		font-size: 6.2vw!important;
+		top: -9vh;
+	}
+	#image-deliver {
+		width: 20px;
+		height: 17px;
+	}
+	#image-order, #image-settings {
+		width: 5vw;
+		left: 17.5vw;
+	}
+	#order-tag, #deliver-tag, #account-tag {
+		font-size: 3vw!important;
+		left: 17.5vw!important;
+		position: relative;
+	}
+}
+.left1 {
+	position: relative;
+	height: 58px;
+	float: left;
+	left: 0.00%;
+	width: 33.52%;
+	border-right: 0.5px solid (0, 0, 0, 0.1);
+	background-color: white;
+	text-decoration: none;
+}
+.left2 {
+	position: relative;
+	height: 58px;
+	float: left;
+	left: 0.40%;
+	width: 33.60%;
+	border-right: 0.5px solid (0, 0, 0, 0.1);
+	background-color: white;
+	text-decoration: none;
+}
+#green-circle {
+	width: 13px;
+	height: 13px;
+	background-color: limegreen;
+	opacity: 0.4;
+	position: absolute;
+	left: 13%;
+	top: 26%;
+	border-radius: 100px;
+}
+.flashit {
+	color: #f2f;
+	-webkit-animation: flash linear 10s infinite;
+	animation: flash linear 10s infinite;
+}
+.left3 {
+	position: absolute;
+	height: 58px;
+	left: 50%;
+	z-index: 1000000001!important;
+	margin-left: -16%;
+	width: 33.60%;
+	background-color: #f7f7f7;
+	display: none;
+	text-decoration: none;
+}
+.right {
+	position: relative;
+	height: 58px;
+	float: right;
+	right: -%;
+	width: 32.40%;
+	border-right: 0.5px solid (0, 0, 0, 0.1);
+	background-color: white;
+	text-decoration: none;
+}
+.footer {
+	position: relative;
+	float: left;
+	left: 0.00%;
+	width: 100.00%;
+	background-color: #cfcfcf
+}
+#radios3 {
+	position: absolute;
+	top: 5vh;
+	display: none;
+	left: 50%;
+	margin-left: -21vw;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Lucida Grande";
+	background-color: rgba(255, 255, 255, 0.7);
+	outline: 1.5px solid #a28ffe;
+	z-index: 50000000;
+	width: 42vw;
+	height: 38px;
+	font-size: 10px;
+}
+#radios2 {
+	position: absolute;
+	top: 73vh;
+	display: none;
+	left: 50%;
+	margin-left: -41vw;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Lucida Grande";
+	background-color: white;
+	outline: 1.5px solid grey;
+	z-index: 50000000;
+	width: 82vw;
+	height: 38px;
+	font-size: 10px;
+}
+.radio2 {
+	display: none;
+}
+.radio3 {
+	display: none;
+}
+#bckgrnd, .labels {
+	width: 41vw;
+	font-size: 10px;
+	height: 30px;
+	text-align: center;
+	display: inline-block;
+	padding-top: 10px;
+	margin-right: -3px;
+	z-index: 2;
+	cursor: pointer;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Lucida Grande";
+}
+.labels1 {
+	width: 21vw;
+	font-size: 10px;
+	height: 30px;
+	text-align: center;
+	display: inline-block;
+	padding-top: 10px;
+	margin-right: -3px;
+	z-index: 2;
+	cursor: pointer;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Lucida Grande";
+}
+#bckgrnd {
+	background-color: grey;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 41vw;
+	height: 38px;
+	z-index: -1;
+}
+#bckgrnd2 {
+	background-image: url(images/footer-bg.png);
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 21vw;
+	height: 38px;
+	z-index: -1;
+}
+#rad1:checked~#bckgrnd {
+	transform: translateX(0);
+	transition: transform 0.2s ease-in-out;
+}
+#rad3:checked~#bckgrnd2 {
+	transform: translateX(0);
+	transition: transform 0.2s ease-in-out;
+}
+#rad2:checked~#bckgrnd {
+	transform: translateX(41vw);
+	transition: transform 0.2s ease-in-out;
+}
+#rad4:checked~#bckgrnd2 {
+	transform: translateX(21vw);
+	transition: transform 0.2s ease-in-out;
+}
+#review-request {
+	background-color: white;
+	height: 40%;
+	position: absolute;
+	bottom: 0vh;
+}
+#pickup {
+	position: relative;
+	top: 3vh;
+	font-size: 4vw;
+	letter-spacing: 0.1px;
+	width: 60vw;
+	left: 50%;
+	font-weight: 200!important;
+	letter-spacing: 0.4px;
+	margin-left: -30vw;
+	text-align: left;
+}
+label p {
+	margin: 0;
+	font-size: 14px;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Lucida Grande";
+	font-weight: 100;
+}
+#label4 {
+	top: -6.2vh!important;
+	position: relative;
+    
+}
+.tab-group {
+	margin: 3em auto;
+	max-width: 50em;
+	width: 100%;
+}
+.tab {
+	position: relative;
+	width: 100%;
+}
+.tab input {
+	position: absolute;
+	left: 0;
+	top: 0;
+	opacity: 0;
+}
+.tab label {
+	background: #fff;
+	color: #000;
+	display: block;
+	font-weight: bold;
+	line-height: 1;
+	padding-left: 3em;
+	padding-bottom: 2em;
+	cursor: pointer;
+	border: 2px solid #eee;
+}
+.tab input:focus+label, .tab label:hover {
+	background: #eee;
+	color: black;
+	transition: .3s;
+}
+.tab-content {
+	max-height: 0;
+	height: 40vw;
+	overflow: hidden;
+	transition: all .5s;
+}
+.tab-content p {
+	margin: 1em 0;
+	margin-left: 2em;
+	font-size: 14px;
+	overflow: scroll;
+}
+.tab input:checked~.tab-content {
+	max-height: 20em;
+}
+#settings-details-username {
+	position: absolute;
+	left: 50%;
+	margin-left: -30vw;
+	width: 60vw;
+	text-align: center;
+	top: 29vh;
+	font-size: 18px;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Lucida Grande";
+	font-weight: 100;
+}
+#map-icon {
+	position: relative;
+	height: 25px;
+}
+#list-icon {
+	position: relative;
+	height: 30px;
+}
+#work-icon {
+	position: fixed;
+	width: 4.4vw!important;
+	top: 0.7vh;
+	left: -4vw!important;
+}
+#home-icon {
+	position: relative;
+	width: 4.4vw!important;
+	top: 0.3vh;
+	left: -4vw!important;
+}
+#work-icon {
+	position: relative;
+	width: 4.4vw!important;
+	top: 0.3vh;
+	left: -4vw!important;
+}
+[type="date"] {
+	background: #fff url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png) 97% 50% no-repeat;
+}
+[type="date"]::-webkit-inner-spin-button {
+	display: none;
+}
+[type="date"]::-webkit-calendar-picker-indicator {
+	opacity: 0;
+}
+* {
+	transition: transform ease-in-out 0ms;
+}
+.opacity {
+	filter: alpha(opacity=0); //IE
+	opacity: 0;
+}
+.gm-style-iw {
+	opacity: 0!important;
+}
+#map-container-info {
+	background-color: white;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	border-radius: 5px;
+	position: absolute;
+	left: 50%;
+	display: none;
+	margin-left: -47.5vw;
+	width: 95vw;
+	bottom: 28vh;
+	height: 16vh;
+	z-index: 1000000000;
+}
+#firstname-reg {
+	background: url(images/iconuser.png) no-repeat scroll 4vw 3vw;
+	background-size: 5vw;
+}
+#lastname-reg {
+	background: url(images/iconuser.png) no-repeat scroll 4vw 3vw;
+	background-size: 5vw;
+}
+#email-reg {
+	background: url(images/iconemail.png) no-repeat scroll 4.4vw 3.2vw;
+	background-size: 4.3vw;
+	text-transform: lowercase;
+}
+#password-reg {
+	background: url(images/iconpassword.png) no-repeat scroll 4.4vw 3.2vw;
+	background-size: 4.3vw;
+}
+#confirm-password-reg {
+	background: url(images/iconpassword.png) no-repeat scroll 4.4vw 3.2vw;
+	background-size: 4.3vw;
+}
+#dob-reg {
+	border-radius: 5px;
+	height: 44px;
+	position: relative;
+	width: 85vw;
+	padding-left: 58px;
+	color: rgba(255, 255, 255, 0.5);
+	font-weight: 100;
+	font-size: 14px;
+	background: url(images/calendar.png) no-repeat scroll 4.4vw 3.2vw;
+	background-size: 4.3vw;
+}
+#itembox {
+	left: 50%;
+	position: absolute;
+	margin-left: -42vw;
+}
+.iteminputs {
+	width: 84vw!important;
+	box-shadow: none!important!important;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.3)!important;
+	border-left: 0.5px solid rgba(0, 0, 0, 0.0)!important;
+	border-top: 0.5px solid rgba(0, 0, 0, 00)!important;
+	border-right: 0.5px solid rgba(0, 0, 0, 0.0)!important;
+}
+#new-location {
+	background-color: white!important;
+	height: 100vh;
+	width: 100vw;
+	position: absolute;
+	display: none;
+	z-index: 100000;
+	display: block;
+}
+#new-item {
+	display: none;
+	background-color: #f7f7f7;
+	height: 100vh;
+	width: 100vw;
+	position: absolute;
+	z-index: 10000000000!important;
+}
+#new-pickup-field {
+	background: url(images/locationicon.svg) no-repeat scroll 4.5vw 0.7vw;
+	background-size: 4.3vw;
+	left: 50%;
+	top: 22.5vh;
+	margin-left: -42vw;
+}
+#new-pickup-field:focus {
+	background: url(images/marker-pin-01.png) no-repeat scroll 4.5vw 0.7vw;
+	background-size: 4.3vw;
+	left: 50%;
+	top: 22.5vh;
+	margin-left: -42vw;
+}
+#new-pickup {
+	display: none;
+	background-color: #f7f7f7;
+	height: 100vh;
+	width: 100vw;
+	position: absolute;
+	z-index: 10000000000!important;
+}
+#slide-up-location {
+	background-color: #f7f7f7;
+	height: 100vh;
+	width: 100vw;
+	position: absolute;
+	display: none;
+	z-index: 10000000000!important;
+}
+#white-box {
+	width: 100vw;
+	height: 40vh;
+	background-color: white;
+	position: absolute;
+	z-index: 5000;
+	-webkit-box-shadow: -1px 0px 43px 6px rgba(0, 0, 0, 0.11);
+	-moz-box-shadow: -1px 0px 43px 6px rgba(0, 0, 0, 0.11);
+	box-shadow: -1px 0px 43px 6px rgba(0, 0, 0, 0.11);
+}
+#whitebox4 {
+	width: 100vw;
+	height: 40vh;
+	background-color: white;
+	position: absolute;
+	z-index: 5000;
+	-webkit-box-shadow: -1px 0px 43px 6px rgba(0, 0, 0, 0.11);
+	-moz-box-shadow: -1px 0px 43px 6px rgba(0, 0, 0, 0.11);
+	box-shadow: -1px 0px 43px 6px rgba(0, 0, 0, 0.11);
+}
+.dropzone {
+	border-radius: 100px;
+	border: 5px solid black;
+	height: 140px;
+	margin: 0 10px;
+	position: absolute;
+	width: 200px;
+	z-index: 1000000000;
+	top: 8vh;
+	left: 50%;
+	margin-left: -100px;
+	background-color: rgba(0, 0, 0, 1);
+	opacity: 0.0;
+	/*
+    background-image: url(Camera.png);
+    background-size: 50px 50px;
+*/
+}
+.dropzone p {
+	height: 100%;
+	line-height: 200px;
+	margin: 0;
+	text-align: center;
+	width: 100%;
+	opacity: 0;
+}
+.dropzone input[type="file"] {
+	height: 100%;
+	left: 0;
+	outline: none;
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	opacity: 0;
+}
+#stars-image {
+	width: 30vw;
+	position: absolute;
+	left: 50%;
+	margin-left: -15vw;
+	top: 34vh;
+	opacity: 0.7;
+}
+#deliv-1-star, #deliv-2-star, #deliv-3-star, #deliv-4-star, #deliv-5-star {
+	display: none;
+}
+#deliverer-rating-stars {
+	width: 23vw;
+	position: absolute;
+	left: 50%;
+	margin-left: -11.5vw;
+	top: 64vh;
+	opacity: 0.5;
+}
+.dropzone+.status {
+	border-radius: 5px;
+	margin: 10px 10px 0;
+	padding: 15px;
+	text-align: center;
+	opacity: 0;
+}
+#status {
+	display: none;
+}
+#dribble {
+	width: 56vw;
+	left: 50%;
+	margin-left: -28vw;
+	position: absolute;
+	top: 19vh;
+}
+.interval {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background-color: white;
+	z-index: 100000000000000000000000000000000000000!important;
+	display: none;
+}
+.no-internet {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background-color: white;
+	z-index: 1000000000;
+	display: none;
+}
+#refresh {
+	display: none;
+}
+#wifi {
+	opacity: 0.4;
+	width: 10vw;
+	position: absolute;
+	left: 50%;
+	margin-left: -5vw;
+	top: 34vh;
+}
+#no-internet-text {
+	width: 70vw!important;
+	position: absolute;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Lucida Grande";
+	font-weight: 300;
+	font-size: 0.9em;
+	text-align: center;
+	left: 50%;
+	margin-left: -35vw;
+	top: 45vh;
+}
+.dropzone.dropzone-dragging {
+	border-color: black
+}
+.loading-modal {
+	background-color: rgba( 255, 255, 255, .8);
+	display: none;
+	position: fixed;
+	z-index: 1000;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+}
+.ordericons {
+	display: none;
+}
+.loading-image {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -16px 0 0 -16px
+}
+body.busy .loading-modal {
+	display: block;
+}
+.animation-target {}
+#star-rating {
+	position: absolute;
+	left: 50%;
+	width: 100vw;
+	top: 35vh;
+	margin-left: -25vw;
+}
+#review-pic {
+	opacity: 0.9;
+	left: 50%;
+	position: absolute;
+	margin-left: -30px;
+	top: 5vh;
+	border-radius: 100vw;
+	width: 70px;
+	height: 70px;
+	border: 1px solid #7fb7fa;
+	opacity: 0.8;
+	object-fit: cover;
+}
+#score {
+	height: 5vh!important;
+	position: relative;
+	width: 60vw;
+	box-shadow: none!important;
+	left: 50%;
+	top: 5vh;
+	margin-left: -33vw;
+	display: none;
+}
+.rated {
+	background-color: #a399fd!important;
+}
+#vote {
+	position: absolute;
+	left: 50%;
+	z-index: 10000;
+	margin-left: -4.6vw;
+	top: 8vh;
+	font-size: 3vw!important;
+}
+.starrating a {
+	border: 0px !important;
+	width: 7%!important;
+}
+#previousOrders {
+	overflow-y: scroll;
+    overflow-x: hidden;
+	padding-top: 10vh;
+	height: 85vh;
+	top: -9vh;
+	position: relative;
+}
+.previousOrders {
+	font-size: 14px;
+	float: left;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Lucida Grande";
+	font-weight: 300;
+	color: black;
+	opacity: 0.8;
+}
+#userpic-container {
+	background: white;
+	border: 1px solid rgba(0, 0, 0, 0.09);
+	-webkit-box-shadow: -1px 0px 43px 6px rgba(0, 0, 0, 0.11);
+	-moz-box-shadow: -1px 0px 43px 6px rgba(0, 0, 0, 0.11);
+	box-shadow: -1px 0px 43px 6px rgba(0, 0, 0, 0.11);
+	border-radius: 0px;
+	height: 40vh;
+}
+#settings-home-buttons {
+	padding-bottom: 2vh;
+	padding-top: 6vh;
+	overflow: scroll;
+}
+#settings-home {
+	overflow: hidden;
+	z-index: 10000;
+	height: 100vh;
+	width: 100vw;
+	background-color: #f7f7f7;
+}
+#sendus {
+	position: relative;
+	top: -2.5vh;
+	height: 6.5vh!important;
+	padding-top: 1.8vh!important;
+	background: url(images/hand.svg) no-repeat scroll 4vw 3vw;
+	background-size: 4.8vw;
+}
+#contactus {
+	padding-top: 1.8vh!important;
+	height: 6.5vh!important;
+	background: url(images/email.svg) no-repeat scroll 4vw 3vw;
+	background-size: 4.8vw;
+}
+#cancel-order-process {
+	width: 5vw;
+	z-index: 1000000000000000000!important;
+	position: fixed;
+	opacity: 0.4;
+	top: 6vh;
+	left: 4vw;
+}
+#my-details {
+	overflow: hidden;
+	z-index: 10000;
+	position: relative;
+	height: 100vh;
+	width: 100vw;
+	display: none;
+	background-color: #f7f7f7;
+}
+#settings-header {
+	font-size: 18px;
+	font-weight: bold;
+	background-color: white;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+	height: 11vh;
+	position: relative;
+	top: -1vh;
+	margin-bottom: 3vh;
+}
+#my-saved-addresses {
+	overflow: hidden;
+	z-index: 10000;
+	height: 100vh;
+	width: 100vw;
+	display: none;
+	z-index: 10000;
+	position: relative;
+	background-color: #f7f7f7;
+}
+#svg-payments {
+	width: 100vw;
+	display: block;
+	left: 0vw;
+	top: 12vh;
+	position: fixed;
+}
+#my-orders {
+	overflow: hidden;
+	z-index: 10000;
+	position: relative;
+	height: 100vh;
+	width: 100vw;
+	display: none;
+	background-color: #f7f7f7;
+}
+#my-payments {
+	z-index: 10000;
+	position: relative;
+	overflow: hidden;
+	z-index: 10000;
+	height: 100vh;
+	width: 100vw;
+	display: none;
+	background-color: #f7f7f7;
+}
+#update2 {
+	background-image: url(images/footer-bg.png);
+	background-size: cover;
+	font-size: 3.6vw;
+	padding-top: 1.8vh;
+	font-weight: 100;
+	color: #91abf4;
+	top: 53vh;
+	height: 6vh;
+	z-index: 10000;
+	width: 88vw;
+	left: 50%;
+	border-radius: 0px;
+	color: white;
+	font-weight: 100;
+	text-shadow: none;
+	text-decoration: none;
+	margin-left: -44vw;
+	background-color: rgba(0, 0, 0, 0.2)!important;
+}
+#settings-form {
+	margin: 0!important;
+	border: none;
+	border-right: none;
+	border-left: none;
+}
+#test9 {
+	position: absolute;
+	z-index: 10000;
+}
+.inputs-settings {
+	position: relative;
+	margin: 0!important;
+	height: 8vh!important;
+	background-color: white!important;
+	border-radius: 1px!important;
+	font-size: 3.8vw!important;
+	font-weight: 200;
+	color: #C1C1C1;
+	box-shadow: none!important!important;
+	border-bottom: 0.5px solid black!important;
+	border-left: none;
+	border-top: none;
+	border-right: none;
+}
+#addresses-form {
+	margin: 0!important;
+	top: -10vh!important;
+	box-shadow: none!important!important;
+}
+.inputs-addresses {
+	margin: 0!important;
+	width: 100%;
+	height: 7.5vh!important;
+	background: white!important;
+	border-radius: 0px!important;
+	font-size: 4vw;
+	font-weight: 200;
+	box-shadow: none!important!important;
+	border-bottom: 0.5px solid rgba(0, 0, 0, 0.2)!important;
+	border-left: 0.5px solid rgba(0, 0, 0, 0.2)!important;
+	border-top: 0.5px solid rgba(0, 0, 0, 0.2)!important;
+	border-right: 0.5px solid rgba(0, 0, 0, 0.2)!important;
+}
+#home-icon-addresses {
+	position: relative;
+	height: 2.3vh;
+	opacity: 0.5;
+	font-size: 17px;
+	font-weight: 400;
+	left: -15.4vw;
+	top: -17.6vh;
+}
+.inputs-settings-email {
+	position: relative;
+	height: 7.5vh!important;
+	background-color: white!important;
+	border-radius: 3px!important;
+	font-size: 4vw;
+	font-weight: 200;
+	color: #C1C1C1;
+	padding: none!important;
+	box-shadow: none!important!important;
+	border-bottom: none;
+	border-left: none;
+	border-top: none;
+	border-right: none;
+}
+.settings-ui-btn {
+	color: rgba(0, 0, 0, 0.6);
+	padding-left: 13vw!important;
+	text-align: left!important;
+	background-color: white!important;
+	height: 5.5vh!important;
+	padding-top: 1vh!important;
+	font-size: 4vw!important;
+	font-weight: normal!important;
+	box-shadow: none!important!important;
+	border-radius: 0px!important;
+	border-left: none!important;
+	border-right: none!important;
+	border-bottom: none!important;
+	border-top: none!important;
+	margin-bottom: 0px!important;
+}
+.no-padding {
+	margin-bottom: -10px!important;
+}
+.settings-no-bottom-ui-btn {
+	color: rgba(0, 0, 0, 0.6);
+	text-align: left!important;
+	background-color: white!important;
+	height: 6.5vh!important;
+	font-weight: normal!important;
+	box-shadow: none!important!important;
+	border-radius: 0px!important;
+	border-left: none!important;
+	border-right: none!important;
+	border-bottom: none!important;
+	border-top: 1px solid rgba(0, 0, 0, 0.2)!important;
+}
+.settings-ui-btn p {
+	text-align: right!important;
+	color: #91abf4;
+}
+.slide.in {
+	-webkit-transform: translateX(0);
+	-webkit-animation-name: slideinfromright;
+	-webkit-animation-timing-function: ease-in-out;
+	-webkit-animation-duration: 100ms;
+}
+.slide.out {
+	-webkit-transform: translateX(-100%);
+	-webkit-animation-name: slideouttoleft;
+}
+@-webkit-keyframes slideinfromright {
+	from {
+		-webkit-transform: translateX(50%);
+	}
+	to {
+		-webkit-transform: translateX(0);
+	}
+}
+@-webkit-keyframes slideouttoleft {
+	from {
+		-webkit-transform: translateX(0);
+	}
+	to {
+		-webkit-transform: translateX(-50%);
+	}
+}
+#about {
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Lucida Grande"!import;
+	color: grey;
+	text-align: center;
+	background-color: #f7f7f7;
+	display: none;
+	padding-bottom: 50vh;
+	z-index: 10000;
+	position: relative;
+}
+#about p {
+	font-size: 13px;
+}
+#about h2 {
+	font-size: 14px;
+	font-weight: normal;
+}
+.img-logo-settings {
+	width: 20vw;
+	display: block;
+	overflow: scroll;
+	left: 50%;
+	margin-left: -10vw;
+	opacity: 0.9;
+	top: 18vh;
+	z-index: 10000;
+	position: absolute;
+}
+#mydetails {
+	font-size: 4.2vw;
+	top: 6vh;
+	text-align: center;
+	left: 50%;
+	margin-left: -30vw;
+	width: 60vw;
+	position: absolute;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Lucida Grande"!import;
+	font-weight: 100;
+}
+#myorders {
+	font-size: 4.2vw;
+	top: 6vh;
+	text-align: center;
+	left: 50%;
+	margin-left: -30vw;
+	width: 60vw;
+	position: absolute;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Lucida Grande"!import;
+	font-weight: 100;
+}
+#myaddresses {
+	font-size: 4.2vw;
+	top: 6vh;
+	text-align: center;
+	left: 50%;
+	margin-left: -30vw;
+	width: 60vw;
+	position: absolute;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Lucida Grande"!import;
+	font-weight: 100;
+}
+#mypayments {
+	font-size: 4.2vw;
+	top: 6vh;
+	text-align: center;
+	left: 50%;
+	margin-left: -30vw;
+	width: 60vw;
+	position: absolute;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Lucida Grande"!import;
+	font-weight: 100;
+}
+#aboutheader {
+	font-size: 4.2vw!important;
+	top: 6vh;
+	text-align: center;
+	left: 50%;
+	margin-left: -30vw;
+	width: 60vw;
+	position: absolute;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Lucida Grande"!important;
+	font-weight: 100;
+}
+p9 {
+	font-size: 6vw;
+	font-weight: 400;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+	padding-bottom: 1vh;
+	padding-left: 10vw;
+	padding-right: 10vw;
+}
+.delete-account-button {
+	left: 50%;
+	margin-left: -44vw!important;
+	font-size: 3.6vw!important;
+	padding-top: 1.4vh!important;
+	font-weight: 500!important;
+	color: grey!important;
+	top: 21vh;
+	opacity: 0.8!important;
+	border-radius: 0px!important;
+	box-shadow: none!important;
+	height: 6vh;
+	z-index: 10000;
+	width: 88vw;
+	border-radius: 0px;
+	text-shadow: none!important;
+	text-decoration: none!important;
+	position: absolute;
+	background-color: rgba(255, 72, 56, 0.0)!important;
+	border: 1px solid grey!important;
+}
+#details-back, #orders-back, #addresses-back, #payments-back {
+	top: 5.5vh;
+	padding-left: 2vh;
+	padding-right: 4vh;
+}
+#about-back {
+	top: 5.5vh;
+	padding-left: 2vh;
+	padding-right: 4vh;
+}
+#delete-account {
+	position: relative;
+	left: 9vw;
+	width: 84vw;
+	background-image: url(images/footer-bg.png);
+	background-size: cover;
+	height: 6.5vh;
+	color: white;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Lucida Grande";
+	font-weight: 300;
+	font-size: 16px;
+	border-radius: 0px;
+	border: none;
+	padding-bottom: 1vh;
+	padding-left: 7vw;
+	letter-spacing: -0.4px;
+}
+#keep-account {
+	position: relative;
+	left: 50%;
+	margin-left: -42vw;
+	width: 84vw;
+	background-image: url(images/footer-bg.png);
+	background-size: cover;
+	height: 6.5vh;
+	color: white;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Lucida Grande";
+	font-weight: 300;
+	font-size: 16px;
+	border-radius: 0px;
+	border: none;
+	padding-bottom: 1vh;
+	padding-left: 7vw;
+	letter-spacing: -0.4px;
+}
+.past-date {
+	font-size: 3.5vw!important;
+	opacity: 0.3;
+	text-align: right;
+	left: 0;
+	margin-right: 3vw;
+	top: -6.4vh;
+	!important;
+	position: relative;
+}
+.lines5 {
+	width: 30px;
+	height: 11vh;
+	position: relative;
+	border-right: 1px dashed black;
+	float: left;
+	margin-top: -16.5vh;
+	margin-left: 68vw;
+	opacity: 0.15;
+}
+.past-orders {
+	background-color: rgba(255, 255, 255, 1);
+	height: 17vh;
+	top: -7.5vh;
+	-webkit-box-shadow: 10px 10px 15px -1px rgba(0, 0, 0, 0.18);
+	-moz-box-shadow: 10px 10px 15px -1px rgba(0, 0, 0, 0.18);
+	box-shadow: 10px 10px 15px -6px rgba(0, 0, 0, 0.09);
+	border-bottom: 1px solid rgba(0, 0, 0, 0.09);
+	position: relative;
+	margin-bottom: -6.1vh;
+}
+.past-price {
+	font-size: 4vw!important;
+	font-size: 5vw!important;
+	float: right;
+	right: 2vw;
+	top: 1vh;
+	text-align: right;
+	position: relative;
+}
+.past-itemname {
+	font-size: 4.7vw!important;
+	padding-left: 3vw;
+	letter-spacing: -0.04vw;
+	left: 10vw;
+	top: 5vh;
+	font-weight: 400!important;
+	text-shadow: none;
+	text-decoration: none;
+	position: relative;
+}
+.past-pickup {
+	width: 60vw;
+	font-size: 3.4vw!important;
+	padding-left: 3vw;
+	opacity: 0.5;
+	left: 10vw;
+	top: 3vh;
+	text-shadow: none;
+	text-decoration: none;
+	font-weight: 400;
+	position: relative;
+}
+.ordericon {
+	width: 4vw;
+	top: -28vw;
+	left: 4vw;
+	opacity: 0.8;
+	position: relative;
+}
+.past-location {
+	width: 3.5vw;
+	top: -3.6vw;
+	left: 0.3vw;
+	opacity: 0.8;
+	position: relative;
+	display: none;
+}
+.past-orderid {
+	left: 0;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Lucida Grande";
+	letter-spacing: -0.1vw;
+	opacity: 1;
+	padding-top: 0.5vh;
+	padding-bottom: 0.5vh;
+	background-color: rgba(134, 144, 245, 0.03);
+	border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+	border-top: 1px solid rgba(0, 0, 0, 0.06);
+	font-size: 3.2vw;
+	text-shadow: none;
+	color: rgba(134, 144, 245, 0.7);
+	top: -3.4vh;
+	padding-left: 3vw;
+	position: relative;
+}
+.partialBorder {
+	width: 100%;
+	padding: 1px;
+	margin: 0px auto;
+	text-align: center;
+	background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2))bottom right/ 90% 1px no-repeat, linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)) top left / 100% 1px no-repeat, white
+}
+.bottomBorder {
+	width: 100%;
+	padding: 1px;
+	margin: 0px auto;
+	text-align: center;
+	background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)) bottom left / 100% 1px no-repeat, white
+}
+.fullBorder {
+	width: 100%;
+	padding: 1px;
+	margin: 0px auto;
+	text-align: center;
+	background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2))bottom right/ 100% 1px no-repeat, linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)) top left / 100% 1px no-repeat, white
+}
+.partialBottom {
+	width: 100%;
+	padding: 1px;
+	margin: 0px auto;
+	text-align: center;
+	background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2))bottom right/ 90% 1px no-repeat, white
+}
+.fullBottom {
+	width: 100%;
+	padding-top: 1px;
+	margin: 0px auto;
+	border-bottom: 0.5px solid rgba(0, 0, 0, 0.9);
+	text-align: center;
+	background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2))bottom right/ 100% 1px no-repeat, white
+}
